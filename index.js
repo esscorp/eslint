@@ -1,8 +1,8 @@
 'use strict';
 
 exports.configs = {
-	backend = require('./configs/backend.json'),
-	frontend = require('./configs/frontend.json')
+	backend: require('./configs/backend'),
+	frontend: require('./configs/frontend')
 };
 
 exports.rules = {
