@@ -1,4 +1,4 @@
-{
+module.exports = {
 	"rules": {
 		"curly": 0, //I like `if (error) return next(error);`
 		"space-infix-ops" : 0, //I like `(_.isArray(pkeys))? pkeys : [pkeys];`
@@ -27,4 +27,4 @@
 		"console": false,
 		"Tour": false
 	}
-}
+};
