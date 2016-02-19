@@ -4,7 +4,7 @@ module.exports = {
 		"space-infix-ops" : 0, //I like `(_.isArray(pkeys))? pkeys : [pkeys];`
 		"quotes": [0, "single", "avoid-escape"], // we like double outer quotes with single inner quotes for SQL and only single quotes for JS
 		"block-scoped-var": 2,
-		"space-after-keywords": [2, "always"],
+		"keywords-spacing": [2, "always"],
 		"brace-style": [2, "1tbs"],
 		"space-in-brackets": [2, "never"],
 		"new-cap": [2, {"capIsNew": false}], //I like `Assert()
@@ -22,4 +22,4 @@ module.exports = {
 	},
 	"globals": {
 	}
-}''
+};
