@@ -16,7 +16,7 @@ module.exports = {
 		"no-process-exit": 1,
 
 		//our rules
-		"lowercase-require": 2 //deploy will fail otherwise
+		"lowercase-require": 2, //deploy will fail otherwise
 
 		//this is node.js so allow console.* commands
 		"no-console": [0],
