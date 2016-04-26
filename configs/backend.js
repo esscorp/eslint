@@ -1,3 +1,9 @@
+// eslint rules
+// 0 = off
+// 1 = generate warning
+// 2 = fail immediately
+
+//http://eslint.org/docs/rules/
 module.exports = {
 	"extends": "eslint:recommended",
 	"rules": {
