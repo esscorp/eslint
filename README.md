@@ -86,14 +86,17 @@ NPM: [https://www.npmjs.com/package/eslint-config-ess](https://www.npmjs.com/pac
   3. Select `Package Control: Install Package`.
   4. Install `ESLint`.
   5. Repeat steps 2-3 and install `SublimeLinter-contrib-eslint`.
-  6. Create `.eslintrc` in the top-level directory of the repo (next to `package.json`):  
+  6. Create `.eslintrc.js` in the top-level directory of the repo (next to `package.json`):
 	```
-	touch .eslintrc
+	touch .eslintrc.js
 	```
-  7. Insert this code into `.eslintrc` (this will check only backend errors):
+  7. Insert this code into `.eslintrc.js` (this will check only backend errors):
+	```
+	function clone(obj) {
+		return JSON.parse(JSON.stringify(obj));
+	}
 
-	```
-	var config = require('eslint-config-ess').configs.backend;
+	var config = clone(require('eslint-config-ess').configs.backend);
 	if (config.rules['lowercase-require']) delete config.rules['lowercase-require'];
 	module.exports = config;
 	```
