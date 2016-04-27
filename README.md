@@ -78,3 +78,23 @@ NPM: [https://www.npmjs.com/package/eslint-config-ess](https://www.npmjs.com/pac
 	};
 	```
   6. Test with `grunt` and `grunt check`.
+ 
+###Sublime Text Configuration
+  NOTE: This is a secondary helper; it will not catch as many errors as the grunt task above will. 
+  1. Install [Package Control](https://packagecontrol.io/installation) if not already.
+  2. Open Package Control (⌘⇧P or `CTRL`+`SHIFT`+`P`).
+  3. Select `Package Control: Install Package`.
+  4. Install `ESLint`.
+  5. Repeat steps 2-3 and install `SublimeLinter-contrib-eslint`.
+  6. Create `.eslintrc` in the top-level directory of the repo (next to `package.json`):  
+	```
+	touch .eslintrc
+	```
+  7. Insert this code into `.eslintrc` (this will check only backend errors):
+
+	```
+	var config = require('eslint-config-ess').configs.backend;
+	if (config.rules['lowercase-require']) delete config.rules['lowercase-require'];
+	module.exports = config;
+	```
+
