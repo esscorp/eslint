@@ -86,10 +86,8 @@ NPM: [https://www.npmjs.com/package/eslint-config-ess](https://www.npmjs.com/pac
   3. Select `Package Control: Install Package`.
   4. Install `ESLint`.
   5. Repeat steps 2-3 and install `SublimeLinter-contrib-eslint`.
-  6. Create `.eslintrc.js` in the top-level directory of the repo (next to `package.json`):
-	```
-	touch .eslintrc.js
-	```
+  6. Create `.eslintrc.js` in the top-level directory of the repo (next to `package.json`):  
+	`touch .eslintrc.js`
   7. Insert this code into `.eslintrc.js` (this will check only backend errors):
 	```
 	function clone(obj) {
