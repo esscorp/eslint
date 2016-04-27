@@ -5,6 +5,6 @@ exports.configs = {
 	frontend: require('./configs/frontend')
 };
 
-exports.rules = {
-	lowercaseRequire: require('./rules/lowercase-require')
-};
+// exports.rules = {
+// 	'lowercase-require': require('./rules/lowercase-require')
+// };
