@@ -67,7 +67,7 @@ module.exports = {
 		"space-unary-ops": 2, //'i++', not 'i ++'
 		"semi-spacing": [2, {"before": false, "after": true}], //'case true: x="x"; break;', not 'case true: x="x" ;break ;'
 		"no-return-assign": 2, //disallow 'return x = 0;'
-		"no-useless-concat": 2 //disallow string literal concatenation: '"a" + "b"'
+		"no-useless-concat": 2, //disallow string literal concatenation: '"a" + "b"'
 
 		// Unsure of usefulness
 		// "max-len": [2, {
@@ -78,7 +78,7 @@ module.exports = {
 		// 	"ignorePattern":
 		// 	"^.*(return)|(new Error\\().*$"
 		// }],
-		// "space-before-blocks": [2, {"functions": "always", "keywords": "always", classes: "never"}] //do we want 'function(){' or 'function() {'?
+		"space-before-blocks": [2, {"functions": "always", "keywords": "always", classes: "never"}] //do we want 'function(){' or 'function() {'?
 
 		// Discussed and decided against
 		// "consistent-return": 2, //if a function can return a variable, make sure it always does
