@@ -54,16 +54,22 @@ NPM: [https://www.npmjs.com/package/eslint-config-ess](https://www.npmjs.com/pac
   5. Update `gruntfile.js` to include this configuration:
 	```
 	'use strict';
+	
+	var Pkg = require('./package.json');
 
 	module.exports = function(grunt) {
 
 		grunt.initConfig({
-			pkg: require('./package.json')
+			pkg: Pkg
 		});
 
 		grunt.loadTasks('grunts');
 		
 		grunt.registerTask('check', [
+			'eslint'
+		]);
+		
+		grunt.registerTask('lint', [
 			'eslint'
 		]);
 		
