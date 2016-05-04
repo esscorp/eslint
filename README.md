@@ -13,6 +13,7 @@ NPM: [https://www.npmjs.com/package/eslint-config-ess](https://www.npmjs.com/pac
 
   2. Create a new file in the grunt tasks folder, e.g. `grunts/eslint.js`.
   ```
+  mkdir -p grunts;
   touch grunts/eslint.js
   ```
 
