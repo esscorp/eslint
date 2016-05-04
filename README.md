@@ -97,6 +97,8 @@ NPM: [https://www.npmjs.com/package/eslint-config-ess](https://www.npmjs.com/pac
 	`touch .eslintrc.js`
   7. Insert this code into `.eslintrc.js` (this will check only backend errors):
 	```
+	'use strict';
+
 	function clone(obj) {
 		return JSON.parse(JSON.stringify(obj));
 	}
