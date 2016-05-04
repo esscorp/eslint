@@ -1,4 +1,5 @@
 'use strict';
+
 //https://gist.github.com/jareware/7179093
 module.exports = function(context) {
 	return {

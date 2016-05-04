@@ -1,3 +1,5 @@
+'use strict';
+
 // eslint rules
 // 0 = off
 // 1 = generate warning
