@@ -1,10 +1,14 @@
 'use strict';
 
+var Backend = require('./configs/backend');
+var Frontend = require('./configs/frontend');
+// var LowercaseRequire = require('./rules/lowercase-require');
+
 exports.configs = {
-	backend: require('./configs/backend'),
-	frontend: require('./configs/frontend')
+	backend: Backend,
+	frontend: Frontend
 };
 
 // exports.rules = {
-// 	'lowercase-require': require('./rules/lowercase-require')
+// 	'lowercase-require': LowercaseRequire
 // };
