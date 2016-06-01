@@ -10,36 +10,31 @@
 module.exports = {
 	"extends": "eslint:recommended",
 	"rules": {
-		"curly": 0, //I like `if (error) return next(error);`
-		"space-infix-ops": 0, //I like `(_.isArray(pkeys))? pkeys : [pkeys];`
-		"quotes": [0, "single", "avoid-escape"], // we like double outer quotes with single inner quotes for SQL and only single quotes for JS
-		"block-scoped-var": 2,
-		"brace-style": [2, "1tbs"],
-		"new-cap": [2, {"capIsNew": false}], //I like `Assert()
-		"no-underscore-dangle": 0, //Using leading underscore to indicate private fnc
-		"camelcase": 0, //we use snake case for SQL
-		"comma-spacing": [2, {"before": false, "after": true}],
-		"no-process-exit": 1,
+		"curly": 0, //allow `if (error) return next(error);`
+		"space-infix-ops": 0, //allow no space before ternary operator, e.g., `(_.isArray(pkeys))? pkeys : [pkeys];`
+		"quotes": [0, "single", "avoid-escape"], //allow double quotes. (JS: single outer quotes; SQL: double outer quotes, single inner quotes)
+		"block-scoped-var": 2, //vars assigned withing `if` statements must be declared outside of them
+		"brace-style": [2, "1tbs"], //require `if () {` and `} else {`
+		"new-cap": [2, {"capIsNew": false}], //`new Worker()`, not `new worker()`; allow `Assert()
+		"no-underscore-dangle": 0, //allow leading underscore to indicate private functions
+		"camelcase": 0, //allow snake_case for SQL (use camelCase otherwise)
+		"comma-spacing": [2, {"before": false, "after": true}], //`var a, b, c`, not `var a,b ,c`
+		"no-process-exit": 1, //warn when using `process.exit()`. (allow in tests)
 
-		//our rules
-		"lowercase-require": 2, //deploy will fail otherwise
-
-		//this is node.js so allow console.* commands
-		"no-console": [0],
+		"no-console": [0], //this is node.js so allow console.* commands
 
 		//spacing
-		"object-curly-spacing": [2, "never"],
-		"array-bracket-spacing": [2, "never"],
-		"computed-property-spacing": [2, "never"],
-		"keyword-spacing": [2, {"before": true, "after": true, "overrides": {}}],
+		"object-curly-spacing": [2, "never"], //`{'a': 'b'}`, not `{ 'a': 'b' }`
+		"array-bracket-spacing": [2, "never"], //`[1, 2, 3]`, not `[1,2 ,3]`
+		"computed-property-spacing": [2, "never"], //`obj[key]`, not `obj[ key ]`
+		"keyword-spacing": [2, {"before": true, "after": true, "overrides": {}}], //`for ()`, not `for()`
 
-		//verify all node callbacks check for errors
-		"handle-callback-err": [2, "^(err|error|.+Error)$"],
+		"handle-callback-err": [2, "^(err|error|.+Error)$"], //require all node callbacks to handle errors
 
 		//formatting
-		"no-trailing-spaces": 2,
-		"eol-last": 2,
-		"semi": 2,
+		"no-trailing-spaces": 2, //`var x = 0;`, not `var x = 0;	`
+		"eol-last": 2, //require newline at end of every file
+		"semi": 2, //require semicolon at end of every statement
 
 		/* Ideas */
 
@@ -51,13 +46,13 @@ module.exports = {
 		"comma-style": 2, //commas at end of line, not beginning of line
 		"no-whitespace-before-property": 2, //`exports.search`, not `exports .search`
 		"no-shadow-restricted-names": 2, //disallow overwrite of JS global identifiers, like `var undefined = 'not undefined';`
-		"strict": [2, "safe"], //make sure `use strict` is at the top of files
+		"strict": [2, "safe"], //require `use strict` at the top of every file/module
 
 		// Useful but more difficult to implement
-		// "no-shadow": [2, {"allow": ["error", "err", "next"]}], //we use the variable error everywhere
+		// "no-shadow": [2, {"allow": ["error", "err", "next"]}], //allow variables to be overwritten in callbacks (e.g. `event`)
 
 		// Less useful
-		"dot-notation": [2, {"allowPattern": "^[a-z]+(_[a-z]+)+$"}], //`object.key`, not `object["key"]`, but allow `object["a_key"]`
+		"dot-notation": [2, {"allowPattern": "^[a-z]+(_[a-z]+)+$"}], //`object.key`, not `object['key']`, but allow `object['a_key']`
 		"space-before-function-paren": [2, "never"], //`function()`, not `function ()`
 		"no-spaced-func": 2, //`aFunc()`, not `aFunc ()`
 		"space-in-parens": [2, "never"], //`search(arg)`, not `search( arg )`
@@ -80,13 +75,16 @@ module.exports = {
 		// 	"ignorePattern":
 		// 	"^.*(return)|(new Error\\().*$"
 		// }],
-		"space-before-blocks": [2, {"functions": "always", "keywords": "always", classes: "never"}] //`function() {` not `function(){`
+		"space-before-blocks": [2, {"functions": "always", "keywords": "always", classes: "never"}], //`function() {` not `function(){`
 
 		// Discussed and decided against
 		// "consistent-return": 2, //if a function can return a variable, make sure it always does
 		// "max-statements-per-line": [2, {"max": 1}],
 		// "operator-linebreak": [2, "after", {"overrides": {"?": "before", ":": "before"}}], //`</ul> +`, not `+ </ul>`
 		// "yoda": 2, // `if (x < 0)`, not `if (0 > x)`
+
+		//our rules
+		"lowercase-require": 2 //deploy will fail otherwise
 	},
 	"env": {
 		"node": true,
