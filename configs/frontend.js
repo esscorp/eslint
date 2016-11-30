@@ -30,12 +30,15 @@ module.exports = {
 		"jquery": true
 	},
 	"globals": {
-		"App": false,
-		"Backbone": false,
+		"console": false,
+		"localStorage": false,
 		"_": false,
 		"$": false,
+		"jQuery": false,
+		"Backbone": false,
+		"moment": false,
+		"App": false,
 		"Handlebars": false,
-		"console": false,
 		"Tour": false
 	}
 };
