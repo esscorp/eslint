@@ -1,19 +1,26 @@
 {
-  "name": "eslint-config-ess",
+  "name": "@esscorp/eslint",
   "version": "1.0.7",
   "description": "eslint config",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/estrat/eslint-config-ess.git"
+    "url": "https://github.com/esscorp/eslint-config-ess.git"
   },
   "author": "Dan Hollenbeck <dan@hollenbecks.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/estrat/eslint-config-ess/issues"
+    "url": "https://github.com/esscorp/eslint-config-ess/issues"
   },
-  "homepage": "https://github.com/estrat/eslint-config-ess"
+  "homepage": "https://github.com/esscorp/eslint-config-ess",
+  "keywords": [
+    "eslint",
+    "grunt",
+    "grunt-eslint"
+  ]
 }
