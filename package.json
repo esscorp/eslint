@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/esscorp/eslint-config-ess.git"
+    "url": "https://github.com/esscorp/eslint.git"
   },
   "author": "Dan Hollenbeck <dan@hollenbecks.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/esscorp/eslint-config-ess/issues"
+    "url": "https://github.com/esscorp/eslint/issues"
   },
-  "homepage": "https://github.com/esscorp/eslint-config-ess",
+  "homepage": "https://github.com/esscorp/eslint",
   "keywords": [
     "eslint",
     "grunt",
