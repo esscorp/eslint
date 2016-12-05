@@ -5,86 +5,186 @@
 // 1 = generate warning
 // 2 = fail immediately
 
-//http://eslint.org/docs/rules/
+// http://eslint.org/docs/rules/
 
 module.exports = {
 	"extends": "eslint:recommended",
 	"rules": {
-		"curly": 0, //allow `if (error) return next(error);`
-		"space-infix-ops": 0, //allow no space before ternary operator, e.g., `(_.isArray(pkeys))? pkeys : [pkeys];`
-		"quotes": [0, "single", "avoid-escape"], //allow double quotes. (JS: single outer quotes; SQL: double outer quotes, single inner quotes)
-		"block-scoped-var": 2, //vars assigned withing `if` statements must be declared outside of them
-		"brace-style": [2, "1tbs"], //require `if () {` and `} else {`
-		"new-cap": [2, {"capIsNew": false}], //`new Worker()`, not `new worker()`; allow `Assert()
-		"no-underscore-dangle": 0, //allow leading underscore to indicate private functions
-		"camelcase": 0, //allow snake_case for SQL (use camelCase otherwise)
-		"comma-spacing": [2, {"before": false, "after": true}], //`var a, b, c`, not `var a,b ,c`
-		"no-process-exit": 1, //warn when using `process.exit()`. (allow in tests)
 
-		"no-console": [0], //this is node.js so allow console.* commands
+		// Allow one-line conditions. Do this whenever possible. `if (err) return next(err);`
+		"curly": 0,
 
-		//spacing
-		"object-curly-spacing": [2, "never"], //`{'a': 'b'}`, not `{ 'a': 'b' }`
-		"array-bracket-spacing": [2, "never"], //`[1, 2, 3]`, not `[1,2 ,3]`
-		"computed-property-spacing": [2, "never"], //`obj[key]`, not `obj[ key ]`
-		"keyword-spacing": [2, {"before": true, "after": true, "overrides": {}}], //`for ()`, not `for()`
+		// Space before ternary operator is optional. `(_.isArray(pkeys))? pkeys : [pkeys];`
+		"space-infix-ops": 0,
 
-		"handle-callback-err": [2, "^(err|error|.+Error)$"], //require all node callbacks to handle errors
+		// JS: single quotes, SQL: double quotes
+		"quotes": [0, "single", "avoid-escape"],
 
-		//formatting
-		"no-trailing-spaces": 2, //`var x = 0;`, not `var x = 0;	`
-		"eol-last": 2, //require newline at end of every file
-		"semi": 2, //require semicolon at end of every statement
+		// Declare vars outside of `if` statements.
+		"block-scoped-var": 2,
 
-		/* Ideas */
+		// Require 1 true brace style for multi-line if statements. E.g.: http://eslint.org/docs/rules/brace-style#tbs
+		"brace-style": [2, "1tbs"],
 
-		// Very useful and easy to implement
-		"no-undef": [2, {"typeof": true}], //find future ReferenceErrors
-		"no-use-before-define": [2, {"functions": false}], //variables must be declared before they are used. `var a = 'hi'; alert(a);`, not `alert(a); var a = 'hi';`
-		"global-require": 2, //require statements must be in top-level scope
-		"indent": [2, "tab", {"SwitchCase": 1}], // Indent according to position in scope/expression. Indent case statements.
-		"comma-style": 2, //commas at end of line, not beginning of line
-		"no-whitespace-before-property": 2, //`exports.search`, not `exports .search`
-		"no-shadow-restricted-names": 2, //disallow overwrite of JS global identifiers, like `var undefined = 'not undefined';`
-		"strict": [2, "safe"], //require `use strict` at the top of every file/module
+		// Capitalize constructor functions. `new Worker()`, not `new worker()`
+		"new-cap": [2, {
+			"capIsNew": false // Other functions can be capitalized too. `Assert()`
+		}],
 
-		// Useful but more difficult to implement
-		// "no-shadow": [2, {"allow": ["error", "err", "next"]}], //allow variables to be overwritten in callbacks (e.g. `event`)
+		// Allow functions to begin with '_'. Do this for all private functions.
+		"no-underscore-dangle": 0,
 
-		// Less useful
-		"dot-notation": [2, {"allowPattern": "^[a-z]+(_[a-z]+)+$"}], //`object.key`, not `object['key']`, but allow `object['a_key']`
-		"space-before-function-paren": [2, "never"], //`function()`, not `function ()`
-		"no-spaced-func": 2, //`aFunc()`, not `aFunc ()`
-		"space-in-parens": [2, "never"], //`search(arg)`, not `search( arg )`
-		"no-mixed-spaces-and-tabs": [2, "smart-tabs"], //either tabs or spaces, not both
-		"array-callback-return": 2, //make sure `return` isn`t forgotten in array mapping methods
+		// Allow snake_case. SQL: snake_case, JS: camelCase. Use snake_case for JS vars named after SQL vars.
+		"camelcase": 0,
 
-		// Picky
-		"key-spacing": [2, {"beforeColon": false, "afterColon": true}], //`{a: 0}`, not `{a :0}`
-		"space-unary-ops": 2, //`i++`, not `i ++`
-		"semi-spacing": [2, {"before": false, "after": true}], //`case true: x = 'x'; break;`, not `case true: x = 'x' ;break ;`
-		"no-return-assign": 2, //disallow `return x = 0;`
-		"no-useless-concat": 2, //disallow string literal concatenation: `'a' + 'b'`
+		// Allow variables to be overwritten in callbacks, like `event`. Just be careful when doing this.
+		"no-shadow": 0,
 
-		// Unsure of usefulness
-		// "max-len": [2, {
-		// 	"code": 120,
-		// 	"ignoreComments": true,
-		// 	"ignoreTrailingComments": true,
-		// 	"ignoreUrls": true,
-		// 	"ignorePattern":
-		// 	"^.*(return)|(new Error\\().*$"
-		// }],
-		"space-before-blocks": [2, {"functions": "always", "keywords": "always", classes: "never"}], //`function() {` not `function(){`
+		// `var a, b, c`, not `var a,b,c` or `var a ,b ,c`
+		"comma-spacing": [2, {
+			"before": false,
+			"after": true
+		}],
 
-		// Discussed and decided against
-		// "consistent-return": 2, //if a function can return a variable, make sure it always does
+		// Warn when using `process.exit()`. Only do this in tests.
+		"no-process-exit": 1,
+
+		// This is node.js so allow console.* commands.
+		"no-console": 0,
+
+		// `{'a': 'b'}`, not `{ 'a': 'b' }`
+		"object-curly-spacing": [2, "never"],
+
+		// `[1]`, not `[ 1 ]`
+		"array-bracket-spacing": [2, "never"],
+
+		// `obj[key]`, not `obj[ key ]`
+		"computed-property-spacing": [2, "never"],
+
+		// JS keywords and core functions must have whitespace before and after them. Keyword list: http://eslint.org/docs/rules/keyword-spacing#rule-details
+		"keyword-spacing": [2, {
+			"before": true, // `} else {`, not `}else {`
+			"after": true, // `if ()`, not `if()`
+			"overrides": {
+				"function": { // `function()`, not `function ()`
+					"after": false
+				}
+			}
+		}],
+
+		// Never ignore an err in node.
+		"handle-callback-err": [2, "^(err|error|err[A-Z].+|.+Error)$"],
+
+		// `)};`, not `)}; 	`
+		"no-trailing-spaces": 2,
+
+		// End all files with a newline.
+		"eol-last": 2,
+
+		// Use semicolons; Always;
+		"semi": 2,
+
+		// Point out future ReferenceErrors.
+		"no-undef": [2, {
+			"typeof": true // `typeof` can swallow ReferenceErrors silently. `if (typeof window === 'undefined')`
+		}],
+
+		// Declare vars before using them. `var a = 'hi'; alert(a);`, not `alert(a); var a = 'hi';`
+		"no-use-before-define": [2, {
+			"functions": false
+		}],
+
+		// All `require()` statements must always be in the top-level scope. Put them at the top of the file.
+		"global-require": 2,
+
+		// Use tabs, not spaces. Indent according to position in scope/expression. Basically, keep it neat.
+		"indent": [2, "tab", {
+			// In `switch { case: }` statements, indent `case` lines one more tab than the `switch` line.
+			"SwitchCase": 1
+		}],
+
+		// Commas at end of line, not beginning of line.
+		"comma-style": 2,
+
+		// `exports.search`, not `exports .search`
+		"no-whitespace-before-property": 2,
+
+		// Do not overwrite JS core vars, like `var undefined = 'not undefined';`
+		"no-shadow-restricted-names": 2,
+
+		// Always `'use strict';` at top of files.
+		"strict": [2, "safe"],
+
+		// Use `object.key`, not `object['key']`, whenever possible.
+		"dot-notation": [2, {
+			// Allow `object['a_key']`.
+			"allowPattern": "^[a-z]+(_[a-z]+)+$"
+		}],
+
+		// `function()`, not `function ()`
+		"space-before-function-paren": [2, "never"],
+
+		// `function() {` not `function(){`
+		"space-before-blocks": [2, {
+			"functions": "always",
+			"keywords": "always",
+			"classes": "never"
+		}],
+
+		// `next()`, not `next ()`
+		"no-spaced-func": 2,
+
+		// `if (err)`, not `if ( err )`
+		"space-in-parens": [2, "never"],
+
+		// Use tabs, not spaces.
+		"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
+
+		// Do not forget to `return` values in array methods like `map` and `reduce`.
+		"array-callback-return": 2,
+
+		// `{id: 123}`, not `{id :123}`
+		"key-spacing": [2, {
+			"beforeColon": false,
+			"afterColon": true
+		}],
+
+		// `c++`, not `c ++`
+		"space-unary-ops": 2,
+
+		// Never put whitespace before semicolons, and always put either a newline or a space after semicolons.
+		"semi-spacing": [2, {
+			"before": false, // `next();`, not `next() ;`
+			"after": true // `case 0: x = 'x'; break;`, not `case 0: x = 'x';break;`
+		}],
+
+		// Never set vars inside `return` statements, like `return c++;`
+		"no-return-assign": 2,
+
+		// When concatenating strings, use as few string literals as possible. `'something'`, not `'some' + 'thing'`
+		"no-useless-concat": 2,
+
+		/* Our rules */
+
+		// Verify filenames in `require()` statements have correct capitalization.
+		"lowercase-require": 2
+
+		/* Discussed and decided against */
+
+		// // Limit line length, with some exceptions.
+		// "max-len": [2, {"code": 120, "ignoreComments": true, "ignoreTrailingComments": true, "ignoreUrls": true, "ignorePattern": "^.*(return)|(new Error\\().*$"}]
+
+		// // If a function sometimes return a value, make sure it always does.
+		// "consistent-return": 2,
+
+		// // Limit number of statements in one line.``
 		// "max-statements-per-line": [2, {"max": 1}],
-		// "operator-linebreak": [2, "after", {"overrides": {"?": "before", ":": "before"}}], //`</ul> +`, not `+ </ul>`
-		// "yoda": 2, // `if (x < 0)`, not `if (0 > x)`
 
-		//our rules
-		"lowercase-require": 2 //deploy will fail otherwise
+		// // `<li> +`, not `+ <li>`
+		// "operator-linebreak": [2, "after", {"overrides": {"?": "before", ":": "before"}}],
+
+		// // `if (x === undefined)`, not `if (undefined === x)`
+		// "yoda": 2,
 	},
 	"env": {
 		"node": true,
