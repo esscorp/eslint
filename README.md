@@ -103,7 +103,7 @@ npm install --save @esscorp/eslint;
 
 ## Atom Configuration
 
-*NOTE: This is optional. Also, it will not lint frontend files correctly.*
+*NOTE: This is optional.*
 
 1. Open `Settings`.
 
@@ -153,7 +153,7 @@ npm install --save @esscorp/eslint;
 
 ## Sublime Text Configuration
 
-*NOTE: This is optional. Also, it will not lint frontend files correctly.*
+*NOTE: This is optional.*
 
 1. Install [Package Control](https://packagecontrol.io/installation) if it is not installed already.
 
