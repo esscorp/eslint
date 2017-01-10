@@ -5,7 +5,7 @@
 module.exports = {
 	meta: {
 		docs: {
-			description: 'disallow `Async.each()`',
+			description: 'disallow parallel methods from `Async` package',
 			category: 'Node.js and CommonJS',
 			recommended: false
 		},
@@ -23,11 +23,18 @@ module.exports = {
 				if (!object) return;
 				if (!property) return;
 				if (object.name !== 'Async') return;
-				if (property.name !== 'each') return;
+
+				var preferred;
+				switch (property.name) {
+					case 'each': preferred = 'eachSeries'; break;
+					case 'eachOf': preferred = 'eachOfSeries'; break;
+					case 'map': preferred = 'mapSeries'; break;
+					default: return;
+				}
 
 				context.report({
 					node: node,
-					message: 'Use `Async.eachSeries()` instead. Or add an `eslint-disable-line async-each` comment to run this loop in parallel.'
+					message: 'Use `Async.' + preferred + '()` instead. Or add an `eslint-disable-line async-each` comment to run this loop in parallel.'
 				});
 			}
 		};
