@@ -26,9 +26,17 @@ module.exports = {
 
 				var preferred;
 				switch (property.name) {
+					case 'concat': preferred = 'concatSeries'; break;
+					case 'detect': preferred = 'detectSeries'; break;
 					case 'each': preferred = 'eachSeries'; break;
 					case 'eachOf': preferred = 'eachOfSeries'; break;
+					case 'every': preferred = 'everySeries'; break;
+					case 'filter': preferred = 'filterSeries'; break;
 					case 'map': preferred = 'mapSeries'; break;
+					case 'mapValues': preferred = 'mapValuesSeries'; break;
+					case 'reject': preferred = 'rejectSeries'; break;
+					case 'applyEach': preferred = 'applyEachSeries'; break;
+					case 'times': preferred = 'timesSeries'; break;
 					default: return;
 				}
 
