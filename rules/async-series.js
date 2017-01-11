@@ -34,7 +34,7 @@ module.exports = {
 
 				context.report({
 					node: node,
-					message: 'Use `Async.' + preferred + '()` instead. Or add an `eslint-disable-line async-each` comment to run this loop in parallel.'
+					message: 'Use `Async.' + preferred + '()` instead. Or add an `eslint-disable-line async-series` comment to run this loop in parallel.'
 				});
 			}
 		};

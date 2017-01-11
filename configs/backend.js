@@ -170,7 +170,7 @@ module.exports = {
 		"lowercase-require": 2,
 
 		// Prefer `Async.eachSeries` over `Async.each`. To use `Async.each` add an `eslint-disable-line async-each` comment next to it.
-		"async-each": 1
+		"async-series": 1
 
 		/* Discussed and decided against */
 
