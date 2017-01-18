@@ -7,8 +7,15 @@
 
 // http://eslint.org/docs/rules/
 
+
 module.exports = {
-	"extends": "eslint:recommended",
+	"extends": [
+		"eslint:recommended",
+		"plugin:import/errors"
+	],
+	"plugins": [
+		// "import"
+	],
 	"rules": {
 
 		// Allow one-line conditions. Do this whenever possible. `if (err) return next(err);`
@@ -170,7 +177,7 @@ module.exports = {
 		"lowercase-require": 2,
 
 		// Prefer `Async.eachSeries` over `Async.each`. To use `Async.each` add an `eslint-disable-line async-series` comment next to it.
-		"async-series": 1
+		"async-series": 1,
 
 		/* Discussed and decided against */
 
@@ -188,6 +195,14 @@ module.exports = {
 
 		// // `if (x === undefined)`, not `if (undefined === x)`
 		// "yoda": 2,
+
+		/* External plugin rules */
+
+		// Verify all modules are in package.json.
+		"import/no-extraneous-dependencies": [2],
+
+		// Verify modules exist on the filesystem and that filepaths in `require` statements are correct.
+		"import/no-unresolved": [2, {"commonjs": true}]
 	},
 	"env": {
 		"node": true,
