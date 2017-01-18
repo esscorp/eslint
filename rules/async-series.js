@@ -22,7 +22,7 @@ module.exports = {
 
 				if (!object) return;
 				if (!property) return;
-				if (object.name !== 'Async') return;
+				if (object.name !== 'Async') return; // `node` is not an `Async` method
 
 				var preferred;
 				switch (property.name) {
@@ -44,7 +44,7 @@ module.exports = {
 					case 'select': preferred = 'selectSeries'; break;
 					case 'some': preferred = 'someSeries'; break;
 					case 'times': preferred = 'timesSeries'; break;
-					default: return;
+					default: return;  // `node` does not have a synchronous brother
 				}
 
 				context.report({
