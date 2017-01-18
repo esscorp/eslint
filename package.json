@@ -3,7 +3,9 @@
   "version": "2.0.1",
   "description": "eslint config",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "eslint-plugin-import": "^2.2.0"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +15,12 @@
     "url": "https://github.com/esscorp/eslint.git"
   },
   "author": "Dan Hollenbeck <dan@hollenbecks.com>",
+  "contributors": [
+    {
+      "name": "GreenRaccoon23",
+      "email": "GreenRaccoon23@gmail.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/esscorp/eslint/issues"
