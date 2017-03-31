@@ -53,12 +53,6 @@ module.exports = {
 			"after": true
 		}],
 
-		// Warn when using `process.exit()`. Only do this in tests.
-		"no-process-exit": 1,
-
-		// This is node.js so allow console.* commands.
-		"no-console": 0,
-
 		// `{'a': 'b'}`, not `{ 'a': 'b' }`
 		"object-curly-spacing": [2, "never"],
 
@@ -79,9 +73,6 @@ module.exports = {
 			}
 		}],
 
-		// Never ignore an err in node.
-		"handle-callback-err": [2, "^(err|error|err[A-Z].+|.+Error)$"],
-
 		// `)};`, not `)}; 	`
 		"no-trailing-spaces": 2,
 
@@ -101,9 +92,6 @@ module.exports = {
 			"functions": false
 		}],
 
-		// All `require()` statements must always be in the top-level scope. Put them at the top of the file.
-		"global-require": 2,
-
 		// Use tabs, not spaces. Indent according to position in scope/expression. Basically, keep it neat.
 		"indent": [2, "tab", {
 			// In `switch { case: }` statements, indent `case` lines one more tab than the `switch` line.
@@ -118,9 +106,6 @@ module.exports = {
 
 		// Do not overwrite JS core vars, like `var undefined = 'not undefined';`
 		"no-shadow-restricted-names": 2,
-
-		// Always `'use strict';` at top of files.
-		"strict": [2, "safe"],
 
 		// Use `object.key`, not `object['key']`, whenever possible.
 		"dot-notation": [2, {
@@ -170,6 +155,21 @@ module.exports = {
 
 		// When concatenating strings, use as few string literals as possible. `'something'`, not `'some' + 'thing'`
 		"no-useless-concat": 2,
+
+		// This is node.js so allow console.* commands.
+		"no-console": 0,
+
+		// Always `'use strict';` at top of files.
+		"strict": [2, "safe"],
+
+		// All `require()` statements must always be in the top-level scope. Put them at the top of the file.
+		"global-require": 2,
+
+		// Warn when using `process.exit()`. Only do this in tests.
+		"no-process-exit": 1,
+
+		// Never ignore an err in node.
+		"handle-callback-err": [2, "^(err|error|err[A-Z].+|.+Error)$"],
 
 		/* Our rules */
 
