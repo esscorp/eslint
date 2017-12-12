@@ -39,7 +39,7 @@ npm install --save @esscorp/eslint;
 
 			backend: {
 				options: {
-					config: 'node_modules/@esscorp/eslint/configs/backend.js'
+					configFile: 'node_modules/@esscorp/eslint/configs/backend.js'
 				},
 				src: [
 					'*.js',
@@ -50,7 +50,7 @@ npm install --save @esscorp/eslint;
 
 			frontend: {
 				options: {
-					config: 'node_modules/@esscorp/eslint/configs/frontend.js'
+					configFile: 'node_modules/@esscorp/eslint/configs/frontend.js'
 				},
 				src: [
 					// <file-patterns-here>
