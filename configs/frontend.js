@@ -61,12 +61,7 @@ module.exports = {
 		// JS keywords and core functions must have whitespace before and after them. Keyword list: http://eslint.org/docs/rules/keyword-spacing#rule-details
 		"keyword-spacing": [2, {
 			"before": true, // `} else {`, not `}else {`
-			"after": true, // `if ()`, not `if()`
-			"overrides": {
-				"function": { // `function()`, not `function ()`
-					"after": false
-				}
-			}
+			"after": true // `if ()`, not `if()`
 		}],
 
 		// `)};`, not `)}; 	`
