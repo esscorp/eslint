@@ -204,7 +204,7 @@ module.exports = {
 	"env": {
 		"node": true,
 		"browser": false,
-		"mocha": false
+		"mocha": true
 	},
 	"globals": {
 	}
