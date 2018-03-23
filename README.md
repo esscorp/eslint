@@ -162,7 +162,7 @@ npm install --save @esscorp/eslint;
 		'use strict';
 
 
-		module.exports = require('eslint-config-ess').configs.backend;
+		module.exports = require('@esscorp/eslint').configs.backend;
 	```
 
 7. Create another `.eslintrc.js` in the directory containing frontend files (e.g., `public/.eslintrc.js`). Paste this content inside it:
@@ -170,7 +170,7 @@ npm install --save @esscorp/eslint;
 		'use strict';
 
 
-		module.exports = require('eslint-config-ess').configs.frontend;
+		module.exports = require('@esscorp/eslint').configs.frontend;
 	```
 
 ## Sublime Text Configuration
@@ -217,7 +217,7 @@ npm install --save @esscorp/eslint;
 		'use strict';
 
 
-		module.exports = require('eslint-config-ess').configs.backend;
+		module.exports = require('@esscorp/eslint').configs.backend;
 	```
 
 6. Create another `.eslintrc.js` in the directory containing frontend files (e.g., `public/.eslintrc.js`). Paste this content inside it:
@@ -225,5 +225,5 @@ npm install --save @esscorp/eslint;
 		'use strict';
 
 
-		module.exports = require('eslint-config-ess').configs.frontend;
+		module.exports = require('@esscorp/eslint').configs.frontend;
 	```
