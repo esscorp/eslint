@@ -101,6 +101,27 @@ npm install --save @esscorp/eslint;
 
 6. Test with `grunt` and `grunt check`.
 
+## Visual Studio Code Configuration
+
+*NOTE: This is optional.*
+
+1. Open `Settings`.
+
+	* OS X: <kbd>⌘</kbd><kbd>,</kbd>
+
+	* Linux: <kbd>CTRL</kbd><kbd>,</kbd>
+
+2. Add to `USER SETTINGS`:
+
+	```json
+	"eslint.autoFixOnSave": true,
+	"eslint.options": {
+        "rulePaths": [
+            "node_modules/@esscorp/eslint/rules"
+        ]
+    },
+	```
+
 ## Atom Configuration
 
 *NOTE: This is optional.*
@@ -121,13 +142,13 @@ npm install --save @esscorp/eslint;
 
 	1. Click `Settings` button under `linter-eslint`.
 
-	2. Set `ESLint Rules Dir` to 
+	2. Set `ESLint Rules Dir` to
 
 		```text
 		node_modules/@esscorp/eslint/rules
 		```
 
-	3. Set `.eslintrc Path` to 
+	3. Set `.eslintrc Path` to
 
 		```text
 		node_modules/@esscorp/eslint/configs/backend.js
