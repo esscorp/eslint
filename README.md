@@ -3,12 +3,14 @@
 [https://www.npmjs.com/package/@esscorp/eslint](https://www.npmjs.com/package/@esscorp/eslint)
 
 ## Usage
+
 To use this npm module:
 
 1. [Install](#install)
-2. [Configure Grunt](#grunt-configuration)
-3. *(Optional)* [Configure Atom](#atom-configuration)
-4. *(Optional)* [Configure Sublime Text](#sublime-text-configuration)
+2. [Configure Grunt](#configure-grunt)
+3. *(Optional)* [Configure Visual Studio Code](#configure-visual-studio-code)
+4. *(Optional)* [Configure Atom](#configure-atom)
+5. *(Optional)* [Configure Sublime Text](#configure-sublime-text)
 
 ## Install
 
@@ -16,7 +18,7 @@ To use this npm module:
 npm install --save @esscorp/eslint;
 ```
 
-## Grunt Configuration
+## Configure Grunt
 
 1. Install [grunt-eslint](https://www.npmjs.com/package/grunt-eslint).
 	```bash
@@ -96,9 +98,9 @@ npm install --save @esscorp/eslint;
 	};
 	```
 
-6. Test with `grunt` and `grunt check`.
+6. Test with `grunt` and `grunt lint`.
 
-## Visual Studio Code Configuration
+## Configure Visual Studio Code
 
 *NOTE: This is optional.*
 
@@ -116,7 +118,7 @@ npm install --save @esscorp/eslint;
     },
 	```
 
-3. Create `.eslintrc.js` in the top-level directory of the repo (next to `package.json`). Paste this content inside it:
+3. Create `.eslintrc.js` in the top-level directory of the repo (next to `package.json`) with this content:
 	```javascript
 		'use strict';
 
@@ -124,7 +126,7 @@ npm install --save @esscorp/eslint;
 		module.exports = require('@esscorp/eslint').configs.backend;
 	```
 
-4. Create another `.eslintrc.js` in the directory containing frontend files (e.g., `public/.eslintrc.js`). Paste this content inside it:
+4. Create another `.eslintrc.js` in the directory containing frontend files (e.g., `public/.eslintrc.js`) with this content:
 	```javascript
 		'use strict';
 
@@ -132,7 +134,7 @@ npm install --save @esscorp/eslint;
 		module.exports = require('@esscorp/eslint').configs.frontend;
 	```
 
-## Atom Configuration
+## Configure Atom
 
 *NOTE: This is optional.*
 
@@ -157,7 +159,7 @@ npm install --save @esscorp/eslint;
 		node_modules/@esscorp/eslint/configs/backend.js
 		```
 
-6. Create `.eslintrc.js` in the top-level directory of the repo (next to `package.json`). Paste this content inside it:
+6. Create `.eslintrc.js` in the top-level directory of the repo (next to `package.json`) with this content:
 	```javascript
 		'use strict';
 
@@ -165,7 +167,7 @@ npm install --save @esscorp/eslint;
 		module.exports = require('@esscorp/eslint').configs.backend;
 	```
 
-7. Create another `.eslintrc.js` in the directory containing frontend files (e.g., `public/.eslintrc.js`). Paste this content inside it:
+7. Create another `.eslintrc.js` in the directory containing frontend files (e.g., `public/.eslintrc.js`) with this content:
 	```javascript
 		'use strict';
 
@@ -173,7 +175,7 @@ npm install --save @esscorp/eslint;
 		module.exports = require('@esscorp/eslint').configs.frontend;
 	```
 
-## Sublime Text Configuration
+## Configure Sublime Text
 
 *NOTE: This is optional.*
 
@@ -212,7 +214,7 @@ npm install --save @esscorp/eslint;
 		}
 		```
 
-5. Create `.eslintrc.js` in the top-level directory of the repo (next to `package.json`). Paste this content inside it:
+5. Create `.eslintrc.js` in the top-level directory of the repo (next to `package.json`) with this content:
 	```javascript
 		'use strict';
 
@@ -220,7 +222,7 @@ npm install --save @esscorp/eslint;
 		module.exports = require('@esscorp/eslint').configs.backend;
 	```
 
-6. Create another `.eslintrc.js` in the directory containing frontend files (e.g., `public/.eslintrc.js`). Paste this content inside it:
+6. Create another `.eslintrc.js` in the directory containing frontend files (e.g., `public/.eslintrc.js`) with this content:
 	```javascript
 		'use strict';
 
