@@ -4,7 +4,7 @@
   "description": "eslint config",
   "main": "index.js",
   "dependencies": {
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.9.0"
   },
   "devDependencies": {},
   "scripts": {
