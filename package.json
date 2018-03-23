@@ -1,6 +1,6 @@
 {
   "name": "@esscorp/eslint",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "eslint config",
   "main": "index.js",
   "dependencies": {
