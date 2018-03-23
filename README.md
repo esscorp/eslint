@@ -116,6 +116,22 @@ npm install --save @esscorp/eslint;
     },
 	```
 
+3. Create `.eslintrc.js` in the top-level directory of the repo (next to `package.json`). Paste this content inside it:
+	```javascript
+		'use strict';
+
+
+		module.exports = require('@esscorp/eslint').configs.backend;
+	```
+
+4. Create another `.eslintrc.js` in the directory containing frontend files (e.g., `public/.eslintrc.js`). Paste this content inside it:
+	```javascript
+		'use strict';
+
+
+		module.exports = require('@esscorp/eslint').configs.frontend;
+	```
+
 ## Atom Configuration
 
 *NOTE: This is optional.*
