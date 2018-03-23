@@ -43,6 +43,15 @@ module.exports = {
 		// Allow variables to be overwritten in callbacks, like `event`. Just be careful when doing this.
 		"no-shadow": 0,
 
+		// Prohibit comma after the last item in a list.
+		"comma-dangle": ["error", {
+			"arrays": "never", // `[1, 2]`, not `[1, 2,]`
+			"objects": "never", // `{a: 1, b: 2}`, not `{a: 1, b:2,}`
+			"imports": "never", // `import {a, b}`, not `import {a, b,}`
+			"exports": "never", // `export {a, b}`, not `export {a, b,}`
+			"functions": "ignore" // `function(a, b) {`, not `function(a, b,) {`
+		}],
+
 		// `var a, b, c`, not `var a,b,c` or `var a ,b ,c`
 		"comma-spacing": [2, {
 			"before": false,
