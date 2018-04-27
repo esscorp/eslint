@@ -12,6 +12,28 @@ module.exports = {
 	"extends": [
 		"eslint:recommended"
 	],
+	"env": {
+		"node": false,
+		"browser": true,
+		"jquery": true,
+		"es6": false
+	},
+	"parserOptions": {
+		"ecmaVersion": 5,
+		"sourceType": "script"
+	},
+	"globals": {
+		"console": false,
+		"localStorage": false,
+		"_": false,
+		"$": false,
+		"jQuery": false,
+		"Backbone": false,
+		"moment": false,
+		"App": false,
+		"Handlebars": false,
+		"Tour": false
+	},
 	"rules": {
 
 		// Allow one-line conditions. Do this whenever possible. `if (err) return next(err);`
@@ -163,22 +185,5 @@ module.exports = {
 
 		// Always `'use strict';` in function declarations.
 		"strict": [1, "function"]
-	},
-	"env": {
-		"node": false,
-		"browser": true,
-		"jquery": true
-	},
-	"globals": {
-		"console": false,
-		"localStorage": false,
-		"_": false,
-		"$": false,
-		"jQuery": false,
-		"Backbone": false,
-		"moment": false,
-		"App": false,
-		"Handlebars": false,
-		"Tour": false
 	}
 };

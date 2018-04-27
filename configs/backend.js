@@ -16,6 +16,17 @@ module.exports = {
 	"plugins": [
 		// "import"
 	],
+	"env": {
+		"node": true,
+		"browser": false,
+		"mocha": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "script"
+	},
+	"globals": {},
 	"rules": {
 
 		// Allow one-line conditions. Do this whenever possible. `if (err) return next(err);`
@@ -209,12 +220,5 @@ module.exports = {
 
 		// Verify modules exist on the filesystem and that filepaths in `require` statements are correct.
 		"import/no-unresolved": [2, {"commonjs": true}]
-	},
-	"env": {
-		"node": true,
-		"browser": false,
-		"mocha": true
-	},
-	"globals": {
 	}
 };
