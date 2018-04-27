@@ -36,6 +36,9 @@ module.exports = {
 		// This is node.js so allow console.* commands.
 		"no-console": 0,
 
+		// Do not use template syntax inside a regular string. `${var}`, not '${var}'
+		"no-template-curly-in-string": 2,
+
 		/*****************************
 		* Best Practices
 		*****************************/
