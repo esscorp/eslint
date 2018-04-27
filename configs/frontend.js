@@ -122,6 +122,9 @@ module.exports = {
 		// End all files with a newline.
 		"eol-last": 2,
 
+		// `next()`, not `next ()`
+		"func-call-spacing": 2,
+
 		// Use tabs, not spaces. Indent according to position in scope/expression. Basically, keep it neat.
 		"indent": [2, "tab", {
 			// In `switch { case: }` statements, indent `case` lines one more tab than the `switch` line.
@@ -191,11 +194,8 @@ module.exports = {
 		"space-infix-ops": 0,
 
 		// `c++`, not `c ++`
-		"space-unary-ops": 2,
+		"space-unary-ops": 2
 
 		/* Deprecated */
-
-		// `next()`, not `next ()`
-		"no-spaced-func": 2
 	}
 };
