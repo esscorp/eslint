@@ -39,6 +39,9 @@ module.exports = {
 		// Allow unnecessary parentheses. We have not had a problem with this yet.
 		"no-extra-parens": 0,
 
+		// Allow direct use of `Object.prototype` builtin methods. We have not had a problem with this yet.
+		"no-prototype-builtins": 0,
+
 		// Do not use template syntax inside a regular string. `${var}`, not '${var}'
 		"no-template-curly-in-string": 2,
 
