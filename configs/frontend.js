@@ -36,12 +36,16 @@ module.exports = {
 	},
 	"rules": {
 
-		/* Possible Errors */
+		/*****************************
+		* Possible Errors
+		*****************************/
 
 		// `console.*` calls are ok as long as they are rare.
 		"no-console": 0,
 
-		/* Best Practices */
+		/*****************************
+		* Best Practices
+		*****************************/
 
 		// Do not forget to `return` values in array methods like `map` and `reduce`.
 		"array-callback-return": 2,
@@ -64,12 +68,16 @@ module.exports = {
 		// When concatenating strings, use as few string literals as possible. `'something'`, not `'some' + 'thing'`
 		"no-useless-concat": 2,
 
-		/* Strict Mode */
+		/*****************************
+		* Strict Mode
+		*****************************/
 
 		// Always `'use strict';` in function declarations.
 		"strict": [1, "function"],
 
-		/* Variables */
+		/*****************************
+		* Variables
+		*****************************/
 
 		// Allow variables to be overwritten in callbacks, like `event`. Just be careful when doing this.
 		"no-shadow": 0,
@@ -87,7 +95,9 @@ module.exports = {
 			"functions": false
 		}],
 
-		/* Stylistic Issues */
+		/*****************************
+		* Stylistic Issues
+		*****************************/
 
 		// `[1]`, not `[ 1 ]`
 		"array-bracket-spacing": [2, "never"],
@@ -196,6 +206,8 @@ module.exports = {
 		// `c++`, not `c ++`
 		"space-unary-ops": 2
 
-		/* Deprecated */
+		/*****************************
+		* Deprecated
+		*****************************/
 	}
 };

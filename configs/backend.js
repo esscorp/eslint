@@ -29,12 +29,16 @@ module.exports = {
 	"globals": {},
 	"rules": {
 
-		/* Possible Errors */
+		/*****************************
+		* Possible Errors
+		*****************************/
 
 		// This is node.js so allow console.* commands.
 		"no-console": 0,
 
-		/* Best Practices */
+		/*****************************
+		* Best Practices
+		*****************************/
 
 		// Do not forget to `return` values in array methods like `map` and `reduce`.
 		"array-callback-return": 2,
@@ -57,12 +61,16 @@ module.exports = {
 		// When concatenating strings, use as few string literals as possible. `'something'`, not `'some' + 'thing'`
 		"no-useless-concat": 2,
 
-		/* Strict Mode */
+		/*****************************
+		* Strict Mode
+		*****************************/
 
 		// Always `'use strict';` at top of files.
 		"strict": [2, "safe"],
 
-		/* Variables */
+		/*****************************
+		* Variables
+		*****************************/
 
 		// Allow variables to be overwritten in callbacks, like `event`. Just be careful when doing this.
 		"no-shadow": 0,
@@ -80,7 +88,9 @@ module.exports = {
 			"functions": false
 		}],
 
-		/* Node.js and CommonJS */
+		/*****************************
+		* Node.js and CommonJS
+		*****************************/
 
 		// All `require()` statements must always be in the top-level scope. Put them at the top of the file.
 		"global-require": 2,
@@ -91,7 +101,9 @@ module.exports = {
 		// Warn when using `process.exit()`. Only do this in tests.
 		"no-process-exit": 1,
 
-		/* Stylistic Issues */
+		/*****************************
+		* Stylistic Issues
+		*****************************/
 
 		// `[1]`, not `[ 1 ]`
 		"array-bracket-spacing": [2, "never"],
@@ -200,9 +212,13 @@ module.exports = {
 		// `c++`, not `c ++`
 		"space-unary-ops": 2,
 
-		/* Deprecated */
+		/*****************************
+		* Deprecated
+		*****************************/
 
-		/* Ours */
+		/*****************************
+		* Ours
+		*****************************/
 
 		// Verify filenames in `require()` statements have correct capitalization.
 		"lowercase-require": 2,
@@ -210,7 +226,9 @@ module.exports = {
 		// Prefer `Async.eachSeries` over `Async.each`. To use `Async.each` add an `eslint-disable-line async-series` comment next to it.
 		"async-series": 1,
 
-		/* Discussed and decided against */
+		/*****************************
+		* Discussed and decided against
+		*****************************/
 
 		// // If a function sometimes return a value, make sure it always does.
 		// "consistent-return": 2,
@@ -227,7 +245,9 @@ module.exports = {
 		// // `<li> +`, not `+ <li>`
 		// "operator-linebreak": [2, "after", {"overrides": {"?": "before", ":": "before"}}],
 
-		/* External Plugins */
+		/*****************************
+		* External Plugins
+		*****************************/
 
 		// Verify all modules are in package.json.
 		"import/no-extraneous-dependencies": [2],
