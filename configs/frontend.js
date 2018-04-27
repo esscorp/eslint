@@ -62,6 +62,14 @@ module.exports = {
 		// Declare vars outside of `if` statements.
 		"block-scoped-var": 2,
 
+		// Allow unlimited cyclomatic complexity (any number of execution paths due to conditionals) because this metric has little value in real life.
+		// The length of each exection path after they split has a much higher impact to complexity than the number of them.
+		// Having 3 paths which call 4 functions each is much more complex than 12 paths which call 1 function each.
+		// Likewise, nested conditions add much more complexity than consecutive ones.
+		// A function with 2 conditions which each have 2 conditions is much more complicated than a function with 4 conditions.
+		// Also, if adding conditions increases explicitness by decreasing abstraction, it will decrease complexity. Explicit code > DRY code.
+		"complexity": 0,
+
 		// Allow a function to return a value in some cases and no value in other cases (return early).
 		"consistent-return": 0,
 
