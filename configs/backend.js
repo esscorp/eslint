@@ -46,6 +46,9 @@ module.exports = {
 		// Declare vars outside of `if` statements.
 		"block-scoped-var": 2,
 
+		// Allow a function to return a value in some cases and no value in other cases (return early).
+		"consistent-return": 0,
+
 		// Allow one-line conditions. Do this whenever possible. `if (err) return next(err);`
 		"curly": 0,
 
@@ -60,6 +63,9 @@ module.exports = {
 
 		// When concatenating strings, use as few string literals as possible. `'something'`, not `'some' + 'thing'`
 		"no-useless-concat": 2,
+
+		// Allow both `if (x === 'val')` and `if ('val' === x)`. todo: revisit?
+		"yoda": 0,
 
 		/*****************************
 		* Strict Mode
@@ -164,6 +170,12 @@ module.exports = {
 			}
 		}],
 
+		// Allow long lines. Usually, explicitness > abstraction. But keep in mind that sometimes terseness === explicitness.
+		"max-len": 0,
+
+		// Allow multiple statements in one line. todo: revisit
+		"max-statements-per-line": 0,
+
 		// Capitalize constructor functions. `new Worker()`, not `new worker()`
 		"new-cap": [2, {
 			"capIsNew": false // Other functions can be capitalized too. `Assert()`
@@ -183,6 +195,9 @@ module.exports = {
 
 		// `{'a': 'b'}`, not `{ 'a': 'b' }`
 		"object-curly-spacing": [2, "never"],
+
+		// Allow both `<li> +` and `+ <li>`. todo: revisit
+		"operator-linebreak": 0,
 
 		// JS: single quotes, SQL: double quotes
 		"quotes": [0, "single", "avoid-escape"],
@@ -225,25 +240,6 @@ module.exports = {
 
 		// Prefer `Async.eachSeries` over `Async.each`. To use `Async.each` add an `eslint-disable-line async-series` comment next to it.
 		"async-series": 1,
-
-		/*****************************
-		* Discussed and decided against
-		*****************************/
-
-		// // If a function sometimes return a value, make sure it always does.
-		// "consistent-return": 2,
-
-		// // `if (x === undefined)`, not `if (undefined === x)`
-		// "yoda": 2,
-
-		// // Limit line length, with some exceptions.
-		// "max-len": [2, {"code": 120, "ignoreComments": true, "ignoreTrailingComments": true, "ignoreUrls": true, "ignorePattern": "^.*(return)|(new Error\\().*$"}]
-
-		// // Limit number of statements in one line.``
-		// "max-statements-per-line": [2, {"max": 1}],
-
-		// // `<li> +`, not `+ <li>`
-		// "operator-linebreak": [2, "after", {"overrides": {"?": "before", ":": "before"}}],
 
 		/*****************************
 		* External Plugins

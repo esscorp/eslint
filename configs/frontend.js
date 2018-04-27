@@ -53,6 +53,9 @@ module.exports = {
 		// Declare vars outside of `if` statements.
 		"block-scoped-var": 2,
 
+		// Allow a function to return a value in some cases and no value in other cases (return early).
+		"consistent-return": 0,
+
 		// Allow one-line conditions. Do this whenever possible. `if (err) return next(err);`
 		"curly": 0,
 
@@ -67,6 +70,9 @@ module.exports = {
 
 		// When concatenating strings, use as few string literals as possible. `'something'`, not `'some' + 'thing'`
 		"no-useless-concat": 2,
+
+		// Allow both `if (x === 'val')` and `if ('val' === x)`. todo: revisit?
+		"yoda": 0,
 
 		/*****************************
 		* Strict Mode
@@ -158,6 +164,12 @@ module.exports = {
 			}
 		}],
 
+		// Allow long lines. Usually, explicitness > abstraction. But keep in mind that sometimes terseness === explicitness.
+		"max-len": 0,
+
+		// Allow multiple statements in one line. todo: revisit
+		"max-statements-per-line": 0,
+
 		// Capitalize constructor functions. `new Worker()`, not `new worker()`
 		"new-cap": [2, {
 			"capIsNew": false // Other functions can be capitalized too. `Assert()`
@@ -177,6 +189,9 @@ module.exports = {
 
 		// `{'a': 'b'}`, not `{ 'a': 'b' }`
 		"object-curly-spacing": [2, "never"],
+
+		// Allow both `<li> +` and `+ <li>`. todo: revisit
+		"operator-linebreak": 0,
 
 		// JS: single quotes, SQL: double quotes
 		"quotes": [2, "single", "avoid-escape"],
