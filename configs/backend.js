@@ -69,6 +69,9 @@ module.exports = {
 		// Allow one-line conditions. Do this whenever possible. `if (err) return next(err);`
 		"curly": 0,
 
+		// Allow switch statements not to have a default case. todo: revisit
+		"default-case": 0,
+
 		// Use `object.key`, not `object['key']`, whenever possible.
 		"dot-notation": [2, {
 			// Allow `object['a_key']`.
