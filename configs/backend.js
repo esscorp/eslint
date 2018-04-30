@@ -326,6 +326,9 @@ module.exports = {
 		// 	}]
 		// }],
 
+		// Allow sync methods (e.g., `FS.readFileSync`).
+		"no-sync": 0,
+
 		/*****************************
 		* Stylistic Issues
 		*****************************/
