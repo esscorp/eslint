@@ -194,6 +194,9 @@ module.exports = {
 		// Do not use comma sequences. (It is probably a typo.) Use multiple statements instead.
 		"no-sequences": 2,
 
+		// Always throw errors, not strings, numbers, etc.
+		"no-throw-literal": 2,
+
 		// When concatenating strings, use as few string literals as possible. `'something'`, not `'some' + 'thing'`
 		"no-useless-concat": 2,
 
