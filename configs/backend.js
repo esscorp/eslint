@@ -90,6 +90,9 @@ module.exports = {
 		// Node.js does not have `alert()`, `prompt()`, or `confirm()`.
 		"no-alert": 2,
 
+		// Do not use `arguments.caller` or `arguments.callee`. If you do not know what these are, that is a good thing; JavaScript is trying to deprecate them.
+		"no-caller": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 

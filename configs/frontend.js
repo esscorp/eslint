@@ -97,6 +97,9 @@ module.exports = {
 		// Do not use `alert()`, `prompt()`, or `confirm()`. We have other UI patterns which provide a better UX than these do.
 		"no-alert": 2,
 
+		// Do not use `arguments.caller` or `arguments.callee`. If you do not know what these are, that is a good thing; JavaScript is trying to deprecate them.
+		"no-caller": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
