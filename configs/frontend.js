@@ -240,6 +240,9 @@ module.exports = {
 		// Always have an `await` expression inside an `async` function.
 		"require-await": 2,
 
+		// Allow variable declarations on any line inside a function. Keep in mind that the interpreter hoists them to the top.
+		"vars-on-top": 0,
+
 		// Allow both `if (x === 'val')` and `if ('val' === x)`. todo: revisit?
 		"yoda": 0,
 
