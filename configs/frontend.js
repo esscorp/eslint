@@ -307,6 +307,9 @@ module.exports = {
 		// Allow array elements to be either all on one line or each on one line. Decide which one is better on a case by case basis.
 		"array-element-newline": 0,
 
+		// Use `function x() {return y;}`, not `function x() { return y; }`.
+		"block-spacing": [2, "never"],
+
 		// Require 1 true brace style for multi-line if statements. E.g.: http://eslint.org/docs/rules/brace-style#tbs
 		"brace-style": [2, "1tbs"],
 
