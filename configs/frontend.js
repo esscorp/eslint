@@ -130,6 +130,9 @@ module.exports = {
 		// Allow shorthand symbols to perform type conversions, like `str = '' + num`, `num = +str`, and `isX = !!x`.
 		"no-implicit-coercion": 0,
 
+		// Allow declaring variables in the global scope (i.e., on the `window` object) without explicitly assigned them to the `window` object. todo: revisit?
+		"no-implicit-globals": 0,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
