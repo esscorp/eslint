@@ -107,6 +107,9 @@ module.exports = {
 		// Allow regex which does not escape division operators. We have not had a problem with this yet.
 		"no-div-regex": 0,
 
+		// Allow `else` blocks which logically are unnecessary. Sometimes this helps readability. todo: revisit?
+		"no-else-return": 0,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
