@@ -215,6 +215,12 @@ module.exports = {
 		// Do not use the `void` operator. It serves no purpose now that `undefined` is immutable.
 		"no-void": 2,
 
+		// Use these terms for lines which need more work and eslint will remind you to revisit them.
+		"no-warning-comments": [1, {
+			"terms": ["FIX", "REVISIT", "TMP", "tmp", "DEV", "dev"],
+			"location": "start"
+		}],
+
 		// Allow both `if (x === 'val')` and `if ('val' === x)`. todo: revisit?
 		"yoda": 0,
 
