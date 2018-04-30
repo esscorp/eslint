@@ -148,6 +148,9 @@ module.exports = {
 		// Do not use wrap code with `{}` unnecessarily.
 		"no-lone-blocks": 2,
 
+		// Do not declare functions inside `for` and `while` loops. They often behave unexpectedly outside of the loop.
+		"no-loop-func": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
