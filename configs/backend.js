@@ -182,6 +182,9 @@ module.exports = {
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
+		// Do not use `await` unnecessarily.
+		"no-return-await": 2,
+
 		// When concatenating strings, use as few string literals as possible. `'something'`, not `'some' + 'thing'`
 		"no-useless-concat": 2,
 
