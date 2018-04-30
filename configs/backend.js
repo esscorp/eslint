@@ -309,6 +309,9 @@ module.exports = {
 		// Do not use `new` and `require` on the same line.
 		"no-new-require": 2,
 
+		// Allow both string concatenation and `Path.join()` when using `__dirname` and `__filename` in path concatenation.
+		"no-path-concat": 0,
+
 		// Warn when using `process.exit()`. Only do this in tests.
 		"no-process-exit": 1,
 
