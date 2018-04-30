@@ -115,6 +115,9 @@ module.exports = {
 		// Never use `eval()`. It is a security risk, and using it is never the best solution to the problem.
 		"no-eval": 2,
 
+		// Do not modify builtin objects, like `String.prototype.toNumber = function...`.
+		"no-extend-native": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
