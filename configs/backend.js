@@ -135,6 +135,9 @@ module.exports = {
 		// Do not use the `__iterator__` property. It has been deprecated.
 		"no-iterator": 2,
 
+		// Do not use labels for loops and `switch` statements. Our code patterns have no need for them yet.
+		"no-labels": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
