@@ -147,6 +147,11 @@ module.exports = {
 		// Allow using numbers which have a special meaning literally instead of through constants (e.g., `if (!x) x = 0` instead of `if (!x) x = DEFAULT_X`). Many times, this removes unnecessary abstraction.
 		"no-magic-numbers": 0,
 
+		// Do not use extra spaces unless they align multiple end-of-line comments.
+		"no-multi-spaces": [2, {
+			"ignoreEOLComments": true
+		}],
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
