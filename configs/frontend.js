@@ -136,6 +136,9 @@ module.exports = {
 		// Do not use allow builtin methods (`setTimeout()`, `setInterval()`, and `execScript()`) to use `eval()` syntax.
 		"no-implied-eval": 0,
 
+		// This rule reports false positives, so allow `this` inside objects which do not appear to have a `this`.
+		"no-invalid-this": 0,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
