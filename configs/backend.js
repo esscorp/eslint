@@ -230,6 +230,9 @@ module.exports = {
 		// Only add `radix` to `parseInt` if needed (e.g., `parseInt('8')`, not `parseInt('8', 10)`).
 		"radix": [2, "as-needed"],
 
+		// Always have an `await` expression inside an `async` function.
+		"require-await": 2,
+
 		// Allow both `if (x === 'val')` and `if ('val' === x)`. todo: revisit?
 		"yoda": 0,
 
