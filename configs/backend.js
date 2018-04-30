@@ -109,6 +109,9 @@ module.exports = {
 		// Do not use destructuring assignment when it will not assign anything. It is probably a typo.
 		"no-empty-pattern": 2,
 
+		// Use `if (!x)`, not `if (x == null)`, but allow `if (x === null)`.
+		"no-eq-null": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
