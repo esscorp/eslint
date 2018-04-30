@@ -100,10 +100,6 @@ module.exports = {
 		// Do not use `arguments.caller` or `arguments.callee`. If you do not know what these are, that is a good thing; JavaScript is trying to deprecate them.
 		"no-caller": 2,
 
-		// Do not use lexical declarations (`let`, `const`, `function`, `class`) in `case`/`default` clauses.
-		// They should be hoisted up before the `switch` statement because all `case` clauses in a `switch` statement share the same scope.
-		"no-case-declarations": 2,
-
 		// Allow regex which does not escape division operators. We have not had a problem with this yet.
 		"no-div-regex": 0,
 
@@ -112,9 +108,6 @@ module.exports = {
 
 		// Do not write empty functions. If one is needed, write a comment which explains why.
 		"no-empty-function": 2,
-
-		// Do not use destructuring assignment when it will not assign anything. It is probably a typo.
-		"no-empty-pattern": 2,
 
 		// Use `if (!x)`, not `if (x == null)`, but allow `if (x === null)`.
 		"no-eq-null": 2,
