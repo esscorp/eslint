@@ -125,6 +125,9 @@ module.exports = {
 		// Do not modify builtin objects, like `String.prototype.toNumber = function...`.
 		"no-extend-native": 2,
 
+		// Do not use `bind()` when it is unnecessary.
+		"no-extra-bind": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
