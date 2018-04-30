@@ -300,6 +300,9 @@ module.exports = {
 		// Never ignore an err in node.
 		"handle-callback-err": [2, "^(err|error|err[A-Z].+|.+Error)$"],
 
+		// Use `Buffer.from()`, `Buffer.alloc()`, or `Buffer.allocUnsafe()`, not `new Buffer()`
+		"no-buffer-constructor": 2,
+
 		// Warn when using `process.exit()`. Only do this in tests.
 		"no-process-exit": 1,
 
