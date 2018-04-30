@@ -180,6 +180,12 @@ module.exports = {
 		// Do not use the `__proto__` property. It has been deprecated.
 		"no-proto": 2,
 
+		// // todo: revisit. Useful for deprecating and refactoring.
+		// "no-restricted-properties": [2, {
+		// 	"object": "disallowedObjectName",
+		// 	"property": "disallowedPropertyName"
+		// }],
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
