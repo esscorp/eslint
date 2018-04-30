@@ -188,6 +188,9 @@ module.exports = {
 		// Do not use `javascript:` URLs because they use `eval()`.
 		"no-script-url": 2,
 
+		// Do not use the same variable on both sides of a comparison. (It is probably a typo.)
+		"no-self-compare": 2,
+
 		// When concatenating strings, use as few string literals as possible. `'something'`, not `'some' + 'thing'`
 		"no-useless-concat": 2,
 
