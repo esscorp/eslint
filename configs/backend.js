@@ -333,6 +333,9 @@ module.exports = {
 		* Stylistic Issues
 		*****************************/
 
+		// If one array element is on a separate line, put the others on separate lines too.
+		"array-bracket-newline": [2, "consistent"],
+
 		// `[1]`, not `[ 1 ]`
 		"array-bracket-spacing": [2, "never"],
 
