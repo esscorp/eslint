@@ -228,6 +228,9 @@ module.exports = {
 			"location": "start"
 		}],
 
+		// Do not use `with` statements. They always cause more problems than they solve.
+		"no-with": 2,
+
 		// Allow both `if (x === 'val')` and `if ('val' === x)`. todo: revisit?
 		"yoda": 0,
 
