@@ -133,6 +133,9 @@ module.exports = {
 		// Allow declaring variables in the global scope (i.e., on the `window` object) without explicitly assigned them to the `window` object. todo: revisit?
 		"no-implicit-globals": 0,
 
+		// Do not use allow builtin methods (`setTimeout()`, `setInterval()`, and `execScript()`) to use `eval()` syntax.
+		"no-implied-eval": 0,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 

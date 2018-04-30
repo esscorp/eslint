@@ -126,6 +126,9 @@ module.exports = {
 		// This is inapplicable to Node.js.
 		"no-implicit-globals": 0,
 
+		// Do not use allow builtin methods (`setTimeout()`, `setInterval()`, and `execScript()`) to use `eval()` syntax.
+		"no-implied-eval": 0,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
