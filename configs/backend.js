@@ -227,6 +227,9 @@ module.exports = {
 		// Always `reject` errors, not strings, numbers, etc.
 		"prefer-promise-reject-errors": 2,
 
+		// Only add `radix` to `parseInt` if needed (e.g., `parseInt('8')`, not `parseInt('8', 10)`).
+		"radix": [2, "as-needed"],
+
 		// Allow both `if (x === 'val')` and `if ('val' === x)`. todo: revisit?
 		"yoda": 0,
 
