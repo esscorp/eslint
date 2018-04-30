@@ -306,6 +306,9 @@ module.exports = {
 		// Do not mix `require()` statements and variable declarations. todo: revisit allowCall
 		"no-mixed-requires": [2, {"allowCall": true}],
 
+		// Do not use `new` and `require` on the same line.
+		"no-new-require": 2,
+
 		// Warn when using `process.exit()`. Only do this in tests.
 		"no-process-exit": 1,
 
