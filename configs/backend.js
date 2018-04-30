@@ -256,6 +256,9 @@ module.exports = {
 		// Allow variable declarations which do not assign a value (e.g., `var x;`).
 		"init-declarations": 0,
 
+		// Allow variables to be overwritten in `catch` clauses. We do not support IE 8.
+		"no-catch-shadow": 0,
+
 		// Allow variables to be overwritten in callbacks, like `event`. Just be careful when doing this.
 		"no-shadow": 0,
 
