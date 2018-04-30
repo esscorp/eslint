@@ -209,6 +209,9 @@ module.exports = {
 		// When concatenating strings, use as few string literals as possible. `'something'`, not `'some' + 'thing'`
 		"no-useless-concat": 2,
 
+		// Do not add an extra `return;` statement to the end of a function unnecessarily.
+		"no-useless-return": 2,
+
 		// Allow both `if (x === 'val')` and `if ('val' === x)`. todo: revisit?
 		"yoda": 0,
 
