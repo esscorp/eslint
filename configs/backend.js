@@ -262,6 +262,9 @@ module.exports = {
 		// Do not give a loop label the same name as a variable.
 		"no-label-var": 2,
 
+		// // Never use these global variables.
+		// "no-restricted-globals": [],
+
 		// Allow variables to be overwritten in callbacks, like `event`. Just be careful when doing this.
 		"no-shadow": 0,
 
