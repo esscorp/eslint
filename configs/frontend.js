@@ -91,6 +91,9 @@ module.exports = {
 		// Prefer `===` over `==`. To use `==` add an `eslint-disable-line eqeqeq` comment next to it.
 		"eqeqeq": [2, "always"],
 
+		// Allow `for (x in y)` loops to skip checks for `y.hasOwnProperty(x)`. We have not had a problem with this yet.
+		"guard-for-in": 0,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
