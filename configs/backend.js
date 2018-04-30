@@ -170,6 +170,9 @@ module.exports = {
 		// Allow modification of a function's params. Keep in mind that it is usually better to normalize values before calling the function.
 		"no-param-reassign": 0,
 
+		// Do not use the `__proto__` property. It has been deprecated.
+		"no-proto": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
