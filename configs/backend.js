@@ -144,6 +144,9 @@ module.exports = {
 		// Do not declare functions inside `for` and `while` loops. They often behave unexpectedly outside of the loop.
 		"no-loop-func": 2,
 
+		// Allow using numbers which have a special meaning literally instead of through constants (e.g., `if (!x) x = 0` instead of `if (!x) x = DEFAULT_X`). Many times, this removes unnecessary abstraction.
+		"no-magic-numbers": 0,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
