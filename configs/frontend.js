@@ -266,6 +266,9 @@ module.exports = {
 		// Allow variables to be overwritten in `catch` clauses. We do not support IE 8.
 		"no-catch-shadow": 0,
 
+		// Do not give a loop label the same name as a variable.
+		"no-label-var": 2,
+
 		// Allow variables to be overwritten in callbacks, like `event`. Just be careful when doing this.
 		"no-shadow": 0,
 
