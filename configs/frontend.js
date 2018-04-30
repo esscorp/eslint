@@ -88,6 +88,9 @@ module.exports = {
 			"allowPattern": "^[a-z]+(_[a-z]+)+$"
 		}],
 
+		// Prefer `===` over `==`. To use `==` add an `eslint-disable-line eqeqeq` comment next to it.
+		"eqeqeq": [2, "always"],
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
