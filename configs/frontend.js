@@ -139,6 +139,9 @@ module.exports = {
 		// This rule reports false positives, so allow `this` inside objects which do not appear to have a `this`.
 		"no-invalid-this": 0,
 
+		// Do not use the `__iterator__` property. It has been deprecated.
+		"no-iterator": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
