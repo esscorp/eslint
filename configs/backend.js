@@ -185,6 +185,9 @@ module.exports = {
 		// Do not use `await` unnecessarily.
 		"no-return-await": 2,
 
+		// Do not use `javascript:` URLs because they use `eval()`.
+		"no-script-url": 2,
+
 		// When concatenating strings, use as few string literals as possible. `'something'`, not `'some' + 'thing'`
 		"no-useless-concat": 2,
 
