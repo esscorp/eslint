@@ -112,6 +112,9 @@ module.exports = {
 		// Use `if (!x)`, not `if (x == null)`, but allow `if (x === null)`.
 		"no-eq-null": 2,
 
+		// Never use `eval()`. It is a security risk, and using it is never the best solution to the problem.
+		"no-eval": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
