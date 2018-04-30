@@ -340,6 +340,9 @@ module.exports = {
 		// `obj[key]`, not `obj[ key ]`
 		"computed-property-spacing": [2, "never"],
 
+		// Allow any alias for `this` (e.g., `el`, `input`).
+		"consistent-this": 0,
+
 		// End all files with a newline.
 		"eol-last": 2,
 
