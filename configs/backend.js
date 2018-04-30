@@ -167,6 +167,9 @@ module.exports = {
 		// Do not use octal escape sequences in strings. They have been deprecated.
 		"no-octal-escape": 2,
 
+		// Allow modification of a function's params. Keep in mind that it is usually better to normalize values before calling the function.
+		"no-param-reassign": 0,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
