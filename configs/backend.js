@@ -312,6 +312,9 @@ module.exports = {
 		// Allow both string concatenation and `Path.join()` when using `__dirname` and `__filename` in path concatenation.
 		"no-path-concat": 0,
 
+		// Allow `process.env`. todo: revisit
+		"no-process-env": 0,
+
 		// Warn when using `process.exit()`. Only do this in tests.
 		"no-process-exit": 1,
 
