@@ -303,6 +303,9 @@ module.exports = {
 		// Use `Buffer.from()`, `Buffer.alloc()`, or `Buffer.allocUnsafe()`, not `new Buffer()`
 		"no-buffer-constructor": 2,
 
+		// Do not mix `require()` statements and variable declarations. todo: revisit allowCall
+		"no-mixed-requires": [2, {"allowCall": true}],
+
 		// Warn when using `process.exit()`. Only do this in tests.
 		"no-process-exit": 1,
 
