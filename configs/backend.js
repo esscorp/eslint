@@ -93,6 +93,10 @@ module.exports = {
 		// Do not use `arguments.caller` or `arguments.callee`. If you do not know what these are, that is a good thing; JavaScript is trying to deprecate them.
 		"no-caller": 2,
 
+		// Do not use lexical declarations (`let`, `const`, `function`, `class`) in `case`/`default` clauses.
+		// They should be hoisted up before the `switch` statement because all `case` clauses in a `switch` statement share the same scope.
+		"no-case-declarations": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
