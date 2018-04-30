@@ -197,6 +197,9 @@ module.exports = {
 		// Always throw errors, not strings, numbers, etc.
 		"no-throw-literal": 2,
 
+		// Do not write an infinite loop by forgetting to modify the loop condition's variables while inside the loop.
+		"no-unmodified-loop-condition": 2,
+
 		// When concatenating strings, use as few string literals as possible. `'something'`, not `'some' + 'thing'`
 		"no-useless-concat": 2,
 
