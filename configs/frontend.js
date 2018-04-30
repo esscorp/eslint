@@ -94,6 +94,9 @@ module.exports = {
 		// Allow `for (x in y)` loops to skip checks for `y.hasOwnProperty(x)`. We have not had a problem with this yet.
 		"guard-for-in": 0,
 
+		// Do not use `alert()`, `prompt()`, or `confirm()`. We have other UI patterns which provide a better UX than these do.
+		"no-alert": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
