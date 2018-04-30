@@ -127,6 +127,9 @@ module.exports = {
 		// Use `0.5`, not `.5`.
 		"no-floating-decimal": 2,
 
+		// Allow shorthand symbols to perform type conversions, like `str = '' + num`, `num = +str`, and `isX = !!x`.
+		"no-implicit-coercion": 0,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
