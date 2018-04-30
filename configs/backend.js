@@ -72,6 +72,9 @@ module.exports = {
 		// Allow switch statements not to have a default case. todo: revisit
 		"default-case": 0,
 
+		// In multi-line chains, begin each line with a dot instead of ending each line with a dot.
+		"dot-location": [2, "property"],
+
 		// Use `object.key`, not `object['key']`, whenever possible.
 		"dot-notation": [2, {
 			// Allow `object['a_key']`.
