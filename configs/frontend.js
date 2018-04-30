@@ -168,6 +168,9 @@ module.exports = {
 		// Use `function...`, not `new Function...` because the latter uses `eval()`.
 		"no-new-func": 2,
 
+		// Use `var x = 'y'`, not `var x = String('y')`.
+		"no-new-wrappers": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
