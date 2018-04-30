@@ -236,6 +236,9 @@ module.exports = {
 		// Allow variable declarations on any line inside a function. Keep in mind that the interpreter hoists them to the top.
 		"vars-on-top": 0,
 
+		// Always wrap immediately invoke function expressions in parentheses.
+		"wrap-iife": [2, "outside"],
+
 		// Allow both `if (x === 'val')` and `if ('val' === x)`. todo: revisit?
 		"yoda": 0,
 
