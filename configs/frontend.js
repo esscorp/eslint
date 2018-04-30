@@ -283,6 +283,9 @@ module.exports = {
 			"typeof": true // `typeof` can swallow ReferenceErrors silently. `if (typeof window === 'undefined')`
 		}],
 
+		// Use `var x;`, not `var x = undefined;`.
+		"no-undef-init": 2,
+
 		// Declare vars before using them. `var a = 'hi'; alert(a);`, not `alert(a); var a = 'hi';`
 		"no-use-before-define": [2, {
 			"functions": false
