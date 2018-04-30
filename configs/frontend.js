@@ -207,6 +207,9 @@ module.exports = {
 		// Do not write an infinite loop by forgetting to modify the loop condition's variables while inside the loop.
 		"no-unmodified-loop-condition": 2,
 
+		// Do not write an expression which does not affect the state of the program (e.g., `i += 1;`, not `i + 1;`).
+		"no-unused-expressions": 2,
+
 		// When concatenating strings, use as few string literals as possible. `'something'`, not `'some' + 'thing'`
 		"no-useless-concat": 2,
 
