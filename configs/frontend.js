@@ -110,6 +110,9 @@ module.exports = {
 		// Allow `else` blocks which logically are unnecessary. Sometimes this helps readability. todo: revisit?
 		"no-else-return": 0,
 
+		// Do not write empty functions. If one is needed, write a comment which explains why.
+		"no-empty-function": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
