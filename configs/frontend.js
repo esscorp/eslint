@@ -162,6 +162,9 @@ module.exports = {
 		// Do not create multiline strings by using a `\` at the end of the line to escape it.
 		"no-multi-str": 2,
 
+		// Always store the result of a `new` statement inside a variable. `var x = new X();`, not `new X();`
+		"no-new": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
