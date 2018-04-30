@@ -121,6 +121,9 @@ module.exports = {
 		// Do not use `bind()` when it is unnecessary.
 		"no-extra-bind": 2,
 
+		// Label loops only when necessary.
+		"no-extra-label": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
