@@ -351,6 +351,9 @@ module.exports = {
 		// Allow snake_case. SQL: snake_case, JS: camelCase. Use snake_case for JS vars named after SQL vars.
 		"camelcase": 0,
 
+		// Allow the first word of comments to be either capitalized or not capitalized.
+		"capitalized-comments": 0,
+
 		// Prohibit comma after the last item in a list.
 		"comma-dangle": ["error", {
 			"arrays": "never", // `[1, 2]`, not `[1, 2,]`
