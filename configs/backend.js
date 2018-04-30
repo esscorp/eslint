@@ -212,6 +212,9 @@ module.exports = {
 		// Do not add an extra `return;` statement to the end of a function unnecessarily.
 		"no-useless-return": 2,
 
+		// Do not use the `void` operator. It serves no purpose now that `undefined` is immutable.
+		"no-void": 2,
+
 		// Allow both `if (x === 'val')` and `if ('val' === x)`. todo: revisit?
 		"yoda": 0,
 
