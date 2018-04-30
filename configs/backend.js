@@ -158,6 +158,9 @@ module.exports = {
 		// Always store the result of a `new` statement inside a variable. `var x = new X();`, not `new X();`
 		"no-new": 2,
 
+		// Use `function...`, not `new Function...` because the latter uses `eval()`.
+		"no-new-func": 2,
+
 		// Never set vars inside `return` statements, like `return c++;`
 		"no-return-assign": 2,
 
