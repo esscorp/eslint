@@ -318,6 +318,14 @@ module.exports = {
 		// Warn when using `process.exit()`. Only do this in tests.
 		"no-process-exit": 1,
 
+		// // Do not use these modules. todo: revisit?
+		// "no-restricted-modules": [2, {
+		// 	"paths": [{
+		// 		"name": "moment-timezone",
+		// 		"message": "Please use @esscorp/occasion instead."
+		// 	}]
+		// }],
+
 		/*****************************
 		* Stylistic Issues
 		*****************************/
