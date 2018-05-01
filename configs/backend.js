@@ -455,8 +455,8 @@ module.exports = {
 			"before": true, // `} else {`, not `}else {`
 			"after": true, // `if ()`, not `if()`
 			"overrides": {
-				"function": { // `function()`, not `function ()`
-					"after": false
+				"function": {
+					"after": false // `function()`, not `function ()`
 				}
 			}
 		}],
