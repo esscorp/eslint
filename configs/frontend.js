@@ -372,6 +372,9 @@ module.exports = {
 		// Allow any variable names. (This rule is too generalized to be useful).
 		"id-match": 0,
 
+		// Allow linebreaks anywhere in arrow functions.
+		"implicit-arrow-linebreak": 0,
+
 		// Use tabs, not spaces. Indent according to position in scope/expression. Basically, keep it neat.
 		"indent": [2, "tab", {
 			// In `switch { case: }` statements, indent `case` lines one more tab than the `switch` line.
