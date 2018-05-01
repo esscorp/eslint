@@ -429,6 +429,11 @@ module.exports = {
 		// Allow comments both above and beside lines.
 		"line-comment-position": 0,
 
+		// Divide class members (methods/properties) with an empty line, unless the member takes up only one line.
+		"lines-between-class-members": [2, "always", {
+			"exceptAfterSingleLine": true
+		}],
+
 		// Allow long lines. Usually, explicitness > abstraction. But keep in mind that sometimes terseness === explicitness.
 		"max-len": 0,
 
