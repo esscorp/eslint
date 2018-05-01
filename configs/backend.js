@@ -498,9 +498,15 @@ module.exports = {
 		// All ternary expressions to span either 1 line or 3 lines. Is it confusing on one line? Use three : Otherwise, use one.
 		"multiline-ternary": 0,
 
-		// Capitalize constructor functions. `new Worker()`, not `new worker()`
+		// Capitalize constructor functions.
 		"new-cap": [2, {
-			"capIsNew": false // Other functions can be capitalized too. `Assert()`
+			"newIsCap": true, // `new Worker()`, not `new worker()`
+			"capIsNew": false, // Other functions can be capitalized too. `Assert()`
+			// "newIsCapExceptions": [],
+			// "newIsCapExceptionPattern": "",
+			// "capIsNewExceptions": [],
+			// "capIsNewExceptionPattern": "",
+			"properties": true
 		}],
 
 		// Use tabs, not spaces.
