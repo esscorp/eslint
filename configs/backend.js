@@ -567,6 +567,9 @@ module.exports = {
 		// 	}
 		// ],
 
+		// Allow tabs.
+		"no-tabs": 0,
+
 		// `)};`, not `)}; 	`
 		"no-trailing-spaces": 2,
 
