@@ -366,6 +366,9 @@ module.exports = {
 		// // Do not give a variable any of these names. todo: revisit?
 		// "id-blacklist": [2, "e", "callback"],
 
+		// Allow variables of any length.
+		"id-length": 0,
+
 		// Use tabs, not spaces. Indent according to position in scope/expression. Basically, keep it neat.
 		"indent": [2, "tab", {
 			// In `switch { case: }` statements, indent `case` lines one more tab than the `switch` line.
