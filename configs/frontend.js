@@ -477,6 +477,9 @@ module.exports = {
 		// `new X()`, not `new X`
 		"new-parens": 2,
 
+		// Allow both single-line and multi-line chains.
+		"newline-per-chained-call": 0,
+
 		// Use tabs, not spaces.
 		"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
 
