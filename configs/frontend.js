@@ -357,6 +357,9 @@ module.exports = {
 		// Do not name a function more times than necessary (e.g., `x.y = function() {}`, not `x.y = function y() {}`).
 		"func-names": [2, "never"],
 
+		// Allow both `var x = function() {` and `function x() {`. todo: revisit?
+		"func-style": 0,
+
 		// Use tabs, not spaces. Indent according to position in scope/expression. Basically, keep it neat.
 		"indent": [2, "tab", {
 			// In `switch { case: }` statements, indent `case` lines one more tab than the `switch` line.
