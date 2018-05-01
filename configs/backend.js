@@ -410,10 +410,34 @@ module.exports = {
 		// Allow linebreaks anywhere in arrow functions.
 		"implicit-arrow-linebreak": 0,
 
-		// Use tabs, not spaces. Indent according to position in scope/expression. Basically, keep it neat.
+		// Use tabs, not spaces. Indent according to position in scope/expression.
 		"indent": [2, "tab", {
 			// In `switch { case: }` statements, indent `case` lines one more tab than the `switch` line.
-			"SwitchCase": 1
+			"SwitchCase": 1,
+			"VariableDeclarator": {
+				"var": 1,
+				"let": 1,
+				"const": 1
+			},
+			"outerIIFEBody": 1,
+			"MemberExpression": 1,
+			"FunctionDeclaration": {
+				"body": 1,
+				"parameters": 2
+			},
+			"FunctionExpression": {
+				"body": 1,
+				"parameters": 2
+			},
+			"CallExpression": {
+				"arguments": 1
+			},
+			"ArrayExpression": 1,
+			"ObjectExpression": 1,
+			"ImportDeclaration": 1,
+			"flatTernaryExpressions": false,
+			"ignoredNodes": [],
+			"ignoreComments": false
 		}],
 
 		// Use double quotes in JSX. (We do not use JSX currently).
