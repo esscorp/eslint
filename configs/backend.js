@@ -461,6 +461,9 @@ module.exports = {
 			}
 		}],
 
+		// Allow comments both above and beside lines.
+		"line-comment-position": 0,
+
 		// Allow long lines. Usually, explicitness > abstraction. But keep in mind that sometimes terseness === explicitness.
 		"max-len": 0,
 
