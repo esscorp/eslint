@@ -605,6 +605,11 @@ module.exports = {
 		// `{'a': 'b'}`, not `{ 'a': 'b' }`
 		"object-curly-spacing": [2, "never"],
 
+		// If one object property is on a separate line, put the others on separate lines too.
+		"object-property-newline": [2, {
+			"allowAllPropertiesOnSameLine": true
+		}],
+
 		// Allow both `<li> +` and `+ <li>`. todo: revisit
 		"operator-linebreak": 0,
 
