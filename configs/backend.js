@@ -188,10 +188,10 @@ module.exports = {
 		// Do not use `javascript:` URLs because they use `eval()`.
 		"no-script-url": 2,
 
-		// Do not use the same variable on both sides of a comparison. (It is probably a typo.)
+		// Do not use the same variable on both sides of a comparison. (It is probably a typo).
 		"no-self-compare": 2,
 
-		// Do not use comma sequences. (It is probably a typo.) Use multiple statements instead.
+		// Do not use comma sequences. (It is probably a typo). Use multiple statements instead.
 		"no-sequences": 2,
 
 		// Always throw errors, not strings, numbers, etc.
