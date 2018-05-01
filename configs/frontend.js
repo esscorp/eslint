@@ -360,6 +360,9 @@ module.exports = {
 		// Allow both `var x = function() {` and `function x() {`. todo: revisit?
 		"func-style": 0,
 
+		// Either place all params on the same line as the function declaration or place each one on its own line.
+		"function-paren-newline": [2, "consistent"],
+
 		// Use tabs, not spaces. Indent according to position in scope/expression. Basically, keep it neat.
 		"indent": [2, "tab", {
 			// In `switch { case: }` statements, indent `case` lines one more tab than the `switch` line.
