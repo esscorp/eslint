@@ -518,6 +518,9 @@ module.exports = {
 		// `[]`, not `Array()` or `new Array()`
 		"no-array-constructor": 2,
 
+		// Do not use bitwise. (It is probably a typo). To use one, add an `eslint-disable-line no-bitwise` comment next to it.
+		"no-bitwise": 2,
+
 		// Use tabs, not spaces.
 		"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
 
