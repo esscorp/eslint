@@ -440,6 +440,9 @@ module.exports = {
 		// Allow long lines. Usually, explicitness > abstraction. But keep in mind that sometimes terseness === explicitness.
 		"max-len": 0,
 
+		// Allow any number of lines in a file. Keep in mind that, when a file becomes large, it is probably encompassing too much logic.
+		"max-lines": 0,
+
 		// Allow multiple statements in one line. todo: revisit
 		"max-statements-per-line": 0,
 
