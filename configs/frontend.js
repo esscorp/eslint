@@ -434,6 +434,9 @@ module.exports = {
 			"exceptAfterSingleLine": true
 		}],
 
+		// Allow blocks to be nested any number of times. Keep in mind that more flat blocks > less nested blocks.
+		"max-depth": 0,
+
 		// Allow long lines. Usually, explicitness > abstraction. But keep in mind that sometimes terseness === explicitness.
 		"max-len": 0,
 
