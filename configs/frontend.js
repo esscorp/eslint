@@ -520,6 +520,9 @@ module.exports = {
 		// `{}`, not `Object()` or `new Object()`
 		"no-new-object": 2,
 
+		// Allow `i++` and `i--`.
+		"no-plusplus": 0,
+
 		// `)};`, not `)}; 	`
 		"no-trailing-spaces": 2,
 
