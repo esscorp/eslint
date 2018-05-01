@@ -574,7 +574,10 @@ module.exports = {
 		"no-ternary": 0,
 
 		// `)};`, not `)}; 	`
-		"no-trailing-spaces": 2,
+		"no-trailing-spaces": [2, {
+			"skipBlankLines": false,
+			"ignoreComments": false
+		}],
 
 		// Allow functions to begin with '_'. Do this for all private functions.
 		"no-underscore-dangle": 0,
