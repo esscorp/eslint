@@ -535,6 +535,9 @@ module.exports = {
 		// Allow tabs.
 		"no-tabs": 0,
 
+		// Allow ternary expressions.
+		"no-ternary": 0,
+
 		// `)};`, not `)}; 	`
 		"no-trailing-spaces": 2,
 
