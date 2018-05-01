@@ -552,6 +552,9 @@ module.exports = {
 		// Do not use nested ternary expressions. Use sequential ones or if statements instead.
 		"no-nested-ternary": 2,
 
+		// `{}`, not `Object()` or `new Object()`
+		"no-new-object": 2,
+
 		// `)};`, not `)}; 	`
 		"no-trailing-spaces": 2,
 
