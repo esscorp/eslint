@@ -536,6 +536,9 @@ module.exports = {
 			"allowSamePrecedence": true
 		}],
 
+		// Allow `var x = window.x = {`. todo: revisit?
+		"no-multi-assign": 0,
+
 		// `)};`, not `)}; 	`
 		"no-trailing-spaces": 2,
 
