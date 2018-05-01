@@ -495,6 +495,12 @@ module.exports = {
 		// `} else if {`, not `} else { if {`
 		"no-lonely-if": 2,
 
+		// Group operators according to how they are evaluated logically (e.g., `(a && b) || c || d` or `a && (b || c || d)`, not `a && b || c || d`).
+		"no-mixed-operators": [2, {
+			// "groups": [[]],
+			"allowSamePrecedence": true
+		}],
+
 		// Use tabs, not spaces.
 		"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
 
