@@ -509,6 +509,9 @@ module.exports = {
 			"properties": true
 		}],
 
+		// `new X()`, not `new X`
+		"new-parens": 2,
+
 		// Use tabs, not spaces.
 		"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
 
