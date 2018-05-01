@@ -448,6 +448,9 @@ module.exports = {
 		// Instead, it is almost always better to encapsulate that code inside one of the callbacks or inside a new callback.
 		"max-nested-callbacks": 0,
 
+		// Allow any number of params in a function. Usually, explicitness > abstraction. But keep in mind that sometimes terseness === explicitness.
+		"max-params": 0,
+
 		// Allow multiple statements in one line. todo: revisit
 		"max-statements-per-line": 0,
 
