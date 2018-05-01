@@ -495,6 +495,9 @@ module.exports = {
 		// Allow any kind of comment styling (`//` and `/**/`).
 		"multiline-comment-style": 0,
 
+		// All ternary expressions to span either 1 line or 3 lines. Is it confusing on one line? Use three : Otherwise, use one.
+		"multiline-ternary": 0,
+
 		// Capitalize constructor functions. `new Worker()`, not `new worker()`
 		"new-cap": [2, {
 			"capIsNew": false // Other functions can be capitalized too. `Assert()`
