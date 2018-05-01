@@ -416,6 +416,9 @@ module.exports = {
 			"SwitchCase": 1
 		}],
 
+		// Use double quotes in JSX. (We do not use JSX currently).
+		"jsx-quotes": [2, "prefer-double"],
+
 		// `{id: 123}`, not `{id :123}`
 		"key-spacing": [2, {
 			"beforeColon": false,
