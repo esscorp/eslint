@@ -631,6 +631,9 @@ module.exports = {
 			}
 		}],
 
+		// Allow but not require an empty line at the start of blocks.
+		"padded-blocks": 0,
+
 		// JS: single quotes, SQL: double quotes
 		"quotes": [0, "single", "avoid-escape"],
 
