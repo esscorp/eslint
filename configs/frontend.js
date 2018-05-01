@@ -523,6 +523,15 @@ module.exports = {
 		// Allow `i++` and `i--`.
 		"no-plusplus": 0,
 
+		// // Quick rules. todo: revisit?
+		// "no-restricted-syntax": [
+		// 	2,
+		// 	{
+		// 		"selector": "CallExpression[callee.object.name='Async'][callee.property.name='map']",
+		// 		"message": "Use `Async.mapSeries()` instead."
+		// 	}
+		// ],
+
 		// `)};`, not `)}; 	`
 		"no-trailing-spaces": 2,
 
