@@ -443,6 +443,11 @@ module.exports = {
 		// Allow any number of lines in a file. Keep in mind that, when a file becomes large, it is probably encompassing too much logic.
 		"max-lines": 0,
 
+		// Allow any number of nested callbacks. Usually, more callbacks === less complexity.
+		// When nesting callbacks, do not add code in between them (except special circumstances).
+		// Instead, it is almost always better to encapsulate that code inside one of the callbacks or inside a new callback.
+		"max-nested-callbacks": 0,
+
 		// Allow multiple statements in one line. todo: revisit
 		"max-statements-per-line": 0,
 
