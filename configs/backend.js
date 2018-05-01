@@ -539,6 +539,13 @@ module.exports = {
 		// Allow `var x = window.x = {`. todo: revisit?
 		"no-multi-assign": 0,
 
+		// Do not use more than 2 empty lines between code.
+		"no-multiple-empty-lines": [2, {
+			"max": 2, // max 1 empty line between code lines
+			"maxEOF": 1, // exactly 1 empty line at end of file
+			"maxBOF": 0 // exactly 0 empty lines at beginning of file
+		}],
+
 		// `)};`, not `)}; 	`
 		"no-trailing-spaces": 2,
 
