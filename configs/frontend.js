@@ -492,6 +492,9 @@ module.exports = {
 		// Allow comments beside lines.
 		"no-inline-comments": 0,
 
+		// `} else if {`, not `} else { if {`
+		"no-lonely-if": 2,
+
 		// Use tabs, not spaces.
 		"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
 
