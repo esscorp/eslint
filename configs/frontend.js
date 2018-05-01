@@ -553,6 +553,9 @@ module.exports = {
 		// `exports.search`, not `exports .search`
 		"no-whitespace-before-property": 2,
 
+		// Single-line statements should be on one line (e.g., `if (x) return y;`).
+		"nonblock-statement-body-position": [2, "beside"],
+
 		// `{'a': 'b'}`, not `{ 'a': 'b' }`
 		"object-curly-spacing": [2, "never"],
 
