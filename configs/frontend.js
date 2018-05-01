@@ -480,6 +480,9 @@ module.exports = {
 		// Allow both single-line and multi-line chains.
 		"newline-per-chained-call": 0,
 
+		// `[]`, not `Array()` or `new Array()`
+		"no-array-constructor": 2,
+
 		// Use tabs, not spaces.
 		"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
 
