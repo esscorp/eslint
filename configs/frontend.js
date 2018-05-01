@@ -511,6 +511,9 @@ module.exports = {
 			"maxBOF": 0 // exactly 0 empty lines at beginning of file
 		}],
 
+		// Allow both `(x)? y : z` and `(!x)? z : y`. todo: revisit?
+		"no-negated-condition": 0,
+
 		// `)};`, not `)}; 	`
 		"no-trailing-spaces": 2,
 
