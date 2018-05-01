@@ -369,6 +369,9 @@ module.exports = {
 		// Allow variables of any length.
 		"id-length": 0,
 
+		// Allow any variable names. (This rule is too generalized to be useful).
+		"id-match": 0,
+
 		// Use tabs, not spaces. Indent according to position in scope/expression. Basically, keep it neat.
 		"indent": [2, "tab", {
 			// In `switch { case: }` statements, indent `case` lines one more tab than the `switch` line.
