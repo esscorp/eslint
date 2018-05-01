@@ -524,6 +524,9 @@ module.exports = {
 		// Allow `continue` statements. Keep in mind that we prefer functional loops over `for` and `while` loops.
 		"no-continue": 0,
 
+		// Allow comments beside lines.
+		"no-inline-comments": 0,
+
 		// Use tabs, not spaces.
 		"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
 
