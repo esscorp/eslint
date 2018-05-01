@@ -582,6 +582,9 @@ module.exports = {
 		// Allow functions to begin with '_'. Do this for all private functions.
 		"no-underscore-dangle": 0,
 
+		// Do not use a ternary expression as a conditional expression (e.g., `(x === y)? true : false`).
+		"no-unneeded-ternary": 2,
+
 		// `exports.search`, not `exports .search`
 		"no-whitespace-before-property": 2,
 
