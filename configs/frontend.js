@@ -501,9 +501,6 @@ module.exports = {
 			"allowSamePrecedence": true
 		}],
 
-		// Use tabs, not spaces.
-		"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
-
 		// `)};`, not `)}; 	`
 		"no-trailing-spaces": 2,
 
