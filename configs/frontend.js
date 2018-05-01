@@ -451,6 +451,9 @@ module.exports = {
 		// Allow any number of params in a function. Usually, explicitness > abstraction. But keep in mind that sometimes terseness === explicitness.
 		"max-params": 0,
 
+		// Allow any number of statements in a function. Usually, explicitness > abstraction. But keep in mind that sometimes terseness === explicitness.
+		"max-statements": 0,
+
 		// Allow multiple statements in one line. todo: revisit
 		"max-statements-per-line": 0,
 
