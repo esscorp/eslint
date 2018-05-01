@@ -591,6 +591,17 @@ module.exports = {
 		// Single-line statements should be on one line (e.g., `if (x) return y;`).
 		"nonblock-statement-body-position": [2, "beside"],
 
+		// If one object property is on a separate line, put the others on separate lines too.
+		"object-curly-newline": [2, {
+			"multiline": true,
+			// "minProperties": 3,
+			"consistent": true,
+			// "ObjectExpression": "always",
+			// "ObjectPattern": "always",
+			// "ImportDeclaration": "always",
+			// "ExportDeclaration": "always"
+		}],
+
 		// `{'a': 'b'}`, not `{ 'a': 'b' }`
 		"object-curly-spacing": [2, "never"],
 
