@@ -486,6 +486,9 @@ module.exports = {
 		// Do not use bitwise. (It is probably a typo). To use one, add an `eslint-disable-line no-bitwise` comment next to it.
 		"no-bitwise": 2,
 
+		// Allow `continue` statements. Keep in mind that we prefer functional loops over `for` and `while` loops.
+		"no-continue": 0,
+
 		// Use tabs, not spaces.
 		"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
 
