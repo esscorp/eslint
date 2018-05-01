@@ -457,6 +457,9 @@ module.exports = {
 		// Allow multiple statements in one line. todo: revisit
 		"max-statements-per-line": 0,
 
+		// Allow any kind of comment styling (`//` and `/**/`).
+		"multiline-comment-style": 0,
+
 		// Capitalize constructor functions. `new Worker()`, not `new worker()`
 		"new-cap": [2, {
 			"capIsNew": false // Other functions can be capitalized too. `Assert()`
