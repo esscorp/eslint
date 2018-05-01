@@ -410,8 +410,9 @@ module.exports = {
 
 		// `{id: 123}`, not `{id :123}`
 		"key-spacing": [2, {
-			"beforeColon": false,
-			"afterColon": true
+			"beforeColon": false, // `{id: 123}`, not `{id : 123}`
+			"afterColon": true, // `{id: 123}`, not `{id:123}`
+			"mode": "strict"
 		}],
 
 		// JS keywords and core functions must have whitespace before and after them. Keyword list: http://eslint.org/docs/rules/keyword-spacing#rule-details
