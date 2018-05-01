@@ -623,8 +623,13 @@ module.exports = {
 		// Allow both `x = x + ''` and `x += ''`.
 		"operator-assignment": 0,
 
-		// Allow both `<li> +` and `+ <li>`. todo: revisit
-		"operator-linebreak": 0,
+		// `<li> +`, not `+ <li>`
+		"operator-linebreak": [2, "after", {
+			"overrides": {
+				"?": "ignore",
+				":": "ignore"
+			}
+		}],
 
 		// JS: single quotes, SQL: double quotes
 		"quotes": [0, "single", "avoid-escape"],
