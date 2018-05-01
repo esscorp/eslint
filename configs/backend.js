@@ -384,6 +384,11 @@ module.exports = {
 		// `next()`, not `next ()`
 		"func-call-spacing": 2,
 
+		// When naming a function twice on the same line, use the same name both times. However, it would be better to name it only once.
+		"func-name-matching": [2, "always", {
+			"includeCommonJSModuleExports": false
+		}],
+
 		// Use tabs, not spaces. Indent according to position in scope/expression. Basically, keep it neat.
 		"indent": [2, "tab", {
 			// In `switch { case: }` statements, indent `case` lines one more tab than the `switch` line.
