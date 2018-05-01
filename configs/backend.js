@@ -549,6 +549,9 @@ module.exports = {
 		// Allow both `(x)? y : z` and `(!x)? z : y`. todo: revisit?
 		"no-negated-condition": 0,
 
+		// Do not use nested ternary expressions. Use sequential ones or if statements instead.
+		"no-nested-ternary": 2,
+
 		// `)};`, not `)}; 	`
 		"no-trailing-spaces": 2,
 
