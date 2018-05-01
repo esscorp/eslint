@@ -575,6 +575,13 @@ module.exports = {
 			"allowAllPropertiesOnSameLine": true
 		}],
 
+		// Declare no more than 1 variable per line.
+		"one-var": [2, {
+			"var": "never",
+			"let": "never",
+			"const": "never",
+		}],
+
 		// Allow both `<li> +` and `+ <li>`. todo: revisit
 		"operator-linebreak": 0,
 
