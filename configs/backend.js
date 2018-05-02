@@ -763,6 +763,11 @@ module.exports = {
 		// `var x = a => {return (1) ? 2 : 3;};`, not `var x = a => (1) ? 2 : 3;`
 		"no-confusing-arrow": 2,
 
+		// Use one import statement per module.
+		"no-duplicate-imports": [2, {
+			"includeExports": true
+		}],
+
 		/*****************************
 		* Deprecated
 		*****************************/
