@@ -704,8 +704,11 @@ module.exports = {
 		// `if (err)`, not `if ( err )`
 		"space-in-parens": [2, "never"],
 
-		// Space before ternary operator is optional. `(_.isArray(pkeys))? pkeys : [pkeys];`
+		// Space before ternary operator is optional. `(_.isArray(pkeys))? pkeys : [pkeys];`. todo: revisit
 		"space-infix-ops": 0,
+		// "space-infix-ops": [2, {
+		// 	"int32Hint": false
+		// }],
 
 		// `c++`, not `c ++`
 		"space-unary-ops": 2,
