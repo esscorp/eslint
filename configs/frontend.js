@@ -748,6 +748,13 @@ module.exports = {
 		// Only add a constructor when necessary.
 		"no-useless-constructor": 2,
 
+		// Only rename imported/exported methods if necessary.
+		"no-useless-rename": [2, {
+			"ignoreDestructuring": false,
+			"ignoreImport": false,
+			"ignoreExport": false
+		}],
+
 		/*****************************
 		* Deprecated
 		*****************************/
