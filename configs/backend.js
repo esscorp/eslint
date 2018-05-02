@@ -684,6 +684,9 @@ module.exports = {
 		// Allow any order in object keys. In general, sort them by their purpose, not by their name.
 		"sort-keys": 0,
 
+		// Allow any order in vars. In general, sort them by their purpose, not by their name.
+		"sort-vars": 0,
+
 		// `function() {` not `function(){`
 		"space-before-blocks": [2, {
 			"functions": "always",
