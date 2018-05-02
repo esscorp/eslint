@@ -788,6 +788,9 @@ module.exports = {
 		// Allow any order in import members. In general, sort them by their purpose, not by their name.
 		"sort-imports": 0,
 
+		// Do not require a description in a `Symbol()` because we have not needed symbols yet.
+		"symbol-description": 0,
+
 		/*****************************
 		* Deprecated
 		*****************************/
