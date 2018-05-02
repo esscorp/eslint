@@ -355,7 +355,7 @@ module.exports = {
 		"capitalized-comments": 0,
 
 		// Prohibit comma after the last item in a list.
-		"comma-dangle": ["error", {
+		"comma-dangle": [2, {
 			"arrays": "never", // `[1, 2]`, not `[1, 2,]`
 			"objects": "never", // `{a: 1, b: 2}`, not `{a: 1, b:2,}`
 			"imports": "never", // `import {a, b}`, not `import {a, b,}`
