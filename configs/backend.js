@@ -739,6 +739,15 @@ module.exports = {
 		"wrap-regex": 0,
 
 		/*****************************
+		* ECMAScript 6
+		*****************************/
+
+		// Use braces as needed for arrow functions.
+		"arrow-body-style": [2, "as-needed", {
+			"requireReturnForObjectLiteral": true
+		}],
+
+		/*****************************
 		* Deprecated
 		*****************************/
 
