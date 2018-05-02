@@ -694,6 +694,13 @@ module.exports = {
 			"classes": "always"
 		}],
 
+		// `function() {`, not `function () {`, and `function x() {`, not `function x () {`
+		"space-before-function-paren": [2, {
+			"anonymous": "never",
+			"named": "never",
+			"asyncArrow": "never"
+		}],
+
 		// `if (err)`, not `if ( err )`
 		"space-in-parens": [2, "never"],
 
