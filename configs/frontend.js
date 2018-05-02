@@ -713,6 +713,12 @@ module.exports = {
 		// Always use parentheses around arrow function params.
 		"arrow-parens": [2, "always"],
 
+		// `(x) => {}`, not `(x)=>{}`
+		"arrow-spacing": [2, {
+			"before": true,
+			"after": true
+		}],
+
 		/*****************************
 		* Deprecated
 		*****************************/
