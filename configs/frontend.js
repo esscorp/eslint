@@ -779,6 +779,9 @@ module.exports = {
 		// Allow but do not require ...spread operator instead of `.apply`. todo: revisit?
 		"prefer-spread": 0,
 
+		// Allow but do not require template literals for string concatenation. todo: revisit?
+		"prefer-template": 0,
+
 		/*****************************
 		* Deprecated
 		*****************************/
