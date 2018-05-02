@@ -599,6 +599,14 @@ module.exports = {
 		// Allow but not require an empty line at the start of blocks.
 		"padded-blocks": 0,
 
+		// Place empty lines in these situations.
+		"padding-line-between-statements": [
+			2,
+			{"blankLine": "always", "prev": "directive", "next": ["var", "let", "const", "function", "cjs-export"]},
+			{"blankLine": "always", "prev": ["var", "let", "const", "function"], "next": "cjs-export"},
+			{"blankLine": "always", "prev": ["var", "let", "const", "function", "cjs-export"], "next": "function"}
+		],
+
 		// JS: single quotes, SQL: double quotes
 		"quotes": [2, "single", "avoid-escape"],
 
