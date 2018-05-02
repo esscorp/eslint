@@ -780,6 +780,9 @@ module.exports = {
 		// `var x = {id: 1};`, not `var x = {['id']: 1};`
 		"no-useless-computed-key": 2,
 
+		// Only add a constructor when necessary.
+		"no-useless-constructor": 2,
+
 		/*****************************
 		* Deprecated
 		*****************************/
