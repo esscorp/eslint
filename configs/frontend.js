@@ -782,6 +782,9 @@ module.exports = {
 		// Allow but do not require template literals for string concatenation. todo: revisit?
 		"prefer-template": 0,
 
+		// `[1, 2, ...spread]`, not `[1, 2, ... spread]`
+		"rest-spread-spacing": [2, "never"],
+
 		/*****************************
 		* Deprecated
 		*****************************/
