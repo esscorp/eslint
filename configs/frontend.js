@@ -770,6 +770,9 @@ module.exports = {
 		// Prefer regular variable declaration over object destructuring.
 		"prefer-destructuring": 0,
 
+		// Use binary, octal, and hexadecimal literals instead of integer conversions.
+		"prefer-numeric-literals": 2,
+
 		/*****************************
 		* Deprecated
 		*****************************/
