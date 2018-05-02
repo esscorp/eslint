@@ -656,7 +656,7 @@ module.exports = {
 		"space-before-blocks": [2, {
 			"functions": "always",
 			"keywords": "always",
-			"classes": "never"
+			"classes": "always"
 		}],
 
 		// `if (err)`, not `if ( err )`
