@@ -747,6 +747,9 @@ module.exports = {
 			"requireReturnForObjectLiteral": true
 		}],
 
+		// Always use parentheses around arrow function params.
+		"arrow-parens": [2, "always"],
+
 		/*****************************
 		* Deprecated
 		*****************************/
