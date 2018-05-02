@@ -681,6 +681,12 @@ module.exports = {
 			"nonwords": false
 		}],
 
+		// Allow comments either to have or not to have a space at the beginning. todo: revisit
+		"spaced-comment": 0,
+		// "spaced-comment": [2, "always", {
+		// 	"exceptions": ["*"]
+		// }],
+
 		/*****************************
 		* Deprecated
 		*****************************/
