@@ -678,6 +678,9 @@ module.exports = {
 			"after": true // `case 0: x = 'x'; break;`, not `case 0: x = 'x';break;`
 		}],
 
+		// Use semicolons at the ends of lines, not at the beginning of them.
+		"semi-style": [2, "last"],
+
 		// `function() {` not `function(){`
 		"space-before-blocks": [2, {
 			"functions": "always",
