@@ -758,6 +758,9 @@ module.exports = {
 		// Allow `var`.
 		"no-var": 0,
 
+		// Allow but do not require shorthand for defining object literals.
+		"object-shorthand": 0,
+
 		/*****************************
 		* Deprecated
 		*****************************/
