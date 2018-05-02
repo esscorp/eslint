@@ -764,6 +764,9 @@ module.exports = {
 		// Prefer regular callbacks.
 		"prefer-arrow-callback": 0,
 
+		// Allow but do not an unchanging variable to be a `const`.
+		"prefer-const": 0,
+
 		/*****************************
 		* Deprecated
 		*****************************/
