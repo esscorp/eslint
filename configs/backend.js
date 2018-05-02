@@ -732,6 +732,9 @@ module.exports = {
 		// But be wary of using tagged template literals because they are difficult to read.
 		"template-tag-spacing": [2, "never"],
 
+		// Never begin a file with `U+FEFF`.
+		"unicode-bom": [2, "never"],
+
 		/*****************************
 		* Deprecated
 		*****************************/
