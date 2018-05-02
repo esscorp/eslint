@@ -719,7 +719,7 @@ module.exports = {
 			"after": true
 		}],
 
-		// `function *generator() {`, not function* generator() {
+		// `function *generator() {`, not `function* generator() {`
 		"generator-star-spacing": [2, {
 			"before": true,
 			"after": false
