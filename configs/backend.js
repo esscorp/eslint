@@ -642,6 +642,13 @@ module.exports = {
 			{"blankLine": "always", "prev": ["var", "let", "const", "function", "cjs-export"], "next": "function"}
 		],
 
+		// Use quotes around property names only when needed, but if one property needs quotes, all of the neighboring properties should have them too.
+		"quote-props": [2, "consistent-as-needed", {
+			"keywords": false,
+			"unnecessary": true,
+			"numbers": true
+		}],
+
 		// JS: single quotes, SQL: double quotes
 		"quotes": [0, "single", "avoid-escape"],
 
