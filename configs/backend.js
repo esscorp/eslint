@@ -820,6 +820,9 @@ module.exports = {
 		// `[1, 2, ...spread]`, not `[1, 2, ... spread]`
 		"rest-spread-spacing": [2, "never"],
 
+		// Allow any order in import members. In general, sort them by their purpose, not by their name.
+		"sort-imports": 0,
+
 		/*****************************
 		* Deprecated
 		*****************************/
