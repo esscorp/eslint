@@ -777,6 +777,9 @@ module.exports = {
 		// 	}]
 		// }],
 
+		// `var x = {id: 1};`, not `var x = {['id']: 1};`
+		"no-useless-computed-key": 2,
+
 		/*****************************
 		* Deprecated
 		*****************************/
