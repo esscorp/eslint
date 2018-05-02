@@ -768,6 +768,15 @@ module.exports = {
 			"includeExports": true
 		}],
 
+		// // Do not import these modules.
+		// "no-restricted-imports": [2, {
+		// 	"paths": [{
+		// 		"name": "import-foo",
+		// 		"importNames": ["Bar"],
+		// 		"message": "Please use Bar from /import-bar/baz/ instead."
+		// 	}]
+		// }],
+
 		/*****************************
 		* Deprecated
 		*****************************/
