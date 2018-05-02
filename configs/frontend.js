@@ -767,6 +767,9 @@ module.exports = {
 		// Allow but do not an unchanging variable to be a `const`.
 		"prefer-const": 0,
 
+		// Prefer regular variable declaration over object destructuring.
+		"prefer-destructuring": 0,
+
 		/*****************************
 		* Deprecated
 		*****************************/
