@@ -755,6 +755,9 @@ module.exports = {
 			"ignoreExport": false
 		}],
 
+		// Allow `var`.
+		"no-var": 0,
+
 		/*****************************
 		* Deprecated
 		*****************************/
