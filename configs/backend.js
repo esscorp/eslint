@@ -668,7 +668,9 @@ module.exports = {
 		"require-jsdoc": 0,
 
 		// Use semicolons; Always;
-		"semi": 2,
+		"semi": [2, "always", {
+			"omitLastInOneLineBlock": false
+		}],
 
 		// Never put whitespace before semicolons, and always put either a newline or a space after semicolons.
 		"semi-spacing": [2, {
