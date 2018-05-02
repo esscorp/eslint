@@ -760,6 +760,9 @@ module.exports = {
 			"after": false
 		}],
 
+		// `var x = a => {return (1) ? 2 : 3;};`, not `var x = a => (1) ? 2 : 3;`
+		"no-confusing-arrow": 2,
+
 		/*****************************
 		* Deprecated
 		*****************************/
