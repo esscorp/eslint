@@ -681,6 +681,9 @@ module.exports = {
 		// Use semicolons at the ends of lines, not at the beginning of them.
 		"semi-style": [2, "last"],
 
+		// Allow any order in object keys. In general, sort them by their purpose, not by their name.
+		"sort-keys": 0,
+
 		// `function() {` not `function(){`
 		"space-before-blocks": [2, {
 			"functions": "always",
