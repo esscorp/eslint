@@ -742,10 +742,8 @@ module.exports = {
 		* ECMAScript 6
 		*****************************/
 
-		// Use braces as needed for arrow functions.
-		"arrow-body-style": [2, "as-needed", {
-			"requireReturnForObjectLiteral": true
-		}],
+		// Always use braces for arrow functions.
+		"arrow-body-style": [2, "always"],
 
 		// Always use parentheses around arrow function params.
 		"arrow-parens": [2, "always"],
