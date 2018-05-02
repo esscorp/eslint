@@ -791,6 +791,9 @@ module.exports = {
 		// Do not require a description in a `Symbol()` because we have not needed symbols yet.
 		"symbol-description": 0,
 
+		// `${var}`, not `${ var }`
+		"template-curly-spacing": [2, "never"],
+
 		/*****************************
 		* Deprecated
 		*****************************/
