@@ -735,6 +735,9 @@ module.exports = {
 		// Never begin a file with `U+FEFF`.
 		"unicode-bom": [2, "never"],
 
+		// Allow both `/x/.test(y)` and `(/x/).test(y)`
+		"wrap-regex": 0,
+
 		/*****************************
 		* Deprecated
 		*****************************/
