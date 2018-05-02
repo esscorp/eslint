@@ -629,6 +629,9 @@ module.exports = {
 		// JS: single quotes, SQL: double quotes
 		"quotes": [2, "single", "avoid-escape"],
 
+		// Do not require JSDoc comments. This feature is open for discussion.
+		"require-jsdoc": 0,
+
 		// Use semicolons; Always;
 		"semi": 2,
 
