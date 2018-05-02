@@ -676,7 +676,10 @@ module.exports = {
 		// }],
 
 		// `c++`, not `c ++`
-		"space-unary-ops": 2
+		"space-unary-ops": [2, {
+			"words": true,
+			"nonwords": false
+		}],
 
 		/*****************************
 		* Deprecated
