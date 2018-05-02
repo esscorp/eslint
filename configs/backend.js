@@ -796,6 +796,9 @@ module.exports = {
 		// Allow but do not require shorthand for defining object literals.
 		"object-shorthand": 0,
 
+		// Prefer regular callbacks.
+		"prefer-arrow-callback": 0,
+
 		/*****************************
 		* Deprecated
 		*****************************/
