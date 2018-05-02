@@ -829,6 +829,12 @@ module.exports = {
 		// `${var}`, not `${ var }`
 		"template-curly-spacing": [2, "never"],
 
+		// `yield *generator() {`, not `yield* generator() {`
+		"yield-star-spacing": [2, {
+			"before": true,
+			"after": false
+		}],
+
 		/*****************************
 		* Deprecated
 		*****************************/
