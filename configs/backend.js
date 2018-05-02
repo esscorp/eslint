@@ -722,6 +722,12 @@ module.exports = {
 		// 	"exceptions": ["*"]
 		// }],
 
+		// `case 1: return;`, not `case 1 :return;`
+		"switch-colon-spacing": [2, {
+			"after": true,
+			"before": false
+		}],
+
 		/*****************************
 		* Deprecated
 		*****************************/
