@@ -637,9 +637,21 @@ module.exports = {
 		// Place empty lines in these situations.
 		"padding-line-between-statements": [
 			2,
-			{"blankLine": "always", "prev": "directive", "next": ["var", "let", "const", "function", "cjs-export"]},
-			{"blankLine": "always", "prev": ["var", "let", "const", "function"], "next": "cjs-export"},
-			{"blankLine": "always", "prev": ["var", "let", "const", "function", "cjs-export"], "next": "function"}
+			{
+				"blankLine": "always",
+				"prev": "directive",
+				"next": ["var", "let", "const", "function", "cjs-export"]
+			},
+			{
+				"blankLine": "always",
+				"prev": ["var", "let", "const", "function"],
+				"next": "cjs-export"
+			},
+			{
+				"blankLine": "always",
+				"prev": ["var", "let", "const", "function", "cjs-export"],
+				"next": "function"
+			}
 		],
 
 		// Use quotes around property names only when needed, but if one property needs quotes, all of the neighboring properties should have them too.
