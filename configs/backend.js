@@ -811,6 +811,9 @@ module.exports = {
 		// Allow but do not require ...rest params.
 		"prefer-rest-params": 0,
 
+		// Allow but do not require ...spread operator instead of `.apply`. todo: revisit?
+		"prefer-spread": 0,
+
 		/*****************************
 		* Deprecated
 		*****************************/
