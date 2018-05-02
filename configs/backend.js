@@ -808,6 +808,9 @@ module.exports = {
 		// Use binary, octal, and hexadecimal literals instead of integer conversions.
 		"prefer-numeric-literals": 2,
 
+		// Allow but do not require ...rest params.
+		"prefer-rest-params": 0,
+
 		/*****************************
 		* Deprecated
 		*****************************/
