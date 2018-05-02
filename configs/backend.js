@@ -728,6 +728,10 @@ module.exports = {
 			"before": false
 		}],
 
+		// Do not insert whitespace between the function and the template string when calling tagged template literals.
+		// But be wary of using tagged template literals because they are difficult to read.
+		"template-tag-spacing": [2, "never"],
+
 		/*****************************
 		* Deprecated
 		*****************************/
