@@ -7,5 +7,6 @@ module.exports = require('./configs/backend');
 delete module.exports.extends[1];
 delete module.exports.rules['import/no-extraneous-dependencies'];
 delete module.exports.rules['import/no-unresolved'];
-delete module.exports.rules['lowercase-require'];
 delete module.exports.rules['async-series'];
+delete module.exports.rules['capitalized-require-vars'];
+delete module.exports.rules['lowercase-require'];

@@ -846,6 +846,9 @@ module.exports = {
 		// Verify filenames in `require()` statements have correct capitalization.
 		"lowercase-require": 2,
 
+		// Capitalize all variable names for modules imported by `require()` calls.
+		"capitalized-require-vars": 2,
+
 		// Prefer `Async.eachSeries` over `Async.each`. To use `Async.each` add an `eslint-disable-line async-series` comment next to it.
 		"async-series": 1,
 
