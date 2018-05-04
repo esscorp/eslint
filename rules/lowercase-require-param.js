@@ -14,21 +14,13 @@ module.exports = {
 	},
 	create: function(context) {
 		return {
-			CallExpression: function(node) {
+			'CallExpression[callee.name="require"][arguments.length=1]': function(node) {
 
-				var callee = node.callee;
-				var name = callee.name;
 				var args = node.arguments;
+				var arg = args[0];
+				var moduleName = args[0].value;
 
-				if (name !== 'require') return;
-				if (args.length === 0) return;
-
-				var param = args[0].value;
-
-				if (typeof param !== 'string') return;
-
-				var valid = (param.toLowerCase() === param);
-				if (valid) return;
+				if (isLowerCase(moduleName)) return;
 
 				context.report({
 					message: 'Lowercase `require()` paths',
@@ -38,3 +30,7 @@ module.exports = {
 		};
 	}
 };
+
+function isLowerCase(str) {
+	return (str.toLowerCase() === str);
+}
