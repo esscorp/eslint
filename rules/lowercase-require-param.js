@@ -5,7 +5,7 @@
 module.exports = {
 	meta: {
 		docs: {
-			description: 'disallow capital letters in `require()` statements',
+			description: 'require module names in `require()` calls to be lowercase',
 			category: 'Node.js and CommonJS',
 			recommended: true
 		},
