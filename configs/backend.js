@@ -291,8 +291,8 @@ module.exports = {
 		* Node.js and CommonJS
 		*****************************/
 
-		// // Always `return` from function when calling `next()`. todo: revisit
-		// "callback-return": [2, ["callback", "cb", "next"]],
+		// Always `return` from function when calling `next()`.
+		"callback-return": [2, ["callback", "cb", "next"]],
 
 		// All `require()` statements must always be in the top-level scope. Put them at the top of the file.
 		"global-require": 2,
