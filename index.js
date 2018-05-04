@@ -1,14 +1,11 @@
 'use strict';
 
-var Backend = require('./configs/backend');
-var Frontend = require('./configs/frontend');
-// var LowercaseRequire = require('./rules/lowercase-require');
 
-exports.configs = {
-	backend: Backend,
-	frontend: Frontend
-};
+exports.configs = {};
+exports.configs.backend = require('./configs/backend');
+exports.configs.frontend = require('./configs/frontend');
 
-// exports.rules = {
-// 	'lowercase-require': LowercaseRequire
-// };
+// exports.rules = {};
+// exports.rules['async-series'] = require('./rules/async-series');
+// exports.rules['capitalized-require-vars'] = require('./rules/capitalized-require-vars');
+// exports.rules['lowercase-require-param'] = require('./rules/lowercase-require-param');
