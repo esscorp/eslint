@@ -13,7 +13,7 @@ module.exports = {
 	},
 	create: function(context) {
 		return {
-			"VariableDeclarator CallExpression[callee.name='require'][arguments.length=1]": function(node) {
+			'VariableDeclarator CallExpression[callee.name="require"][arguments.length=1]': function(node) {
 
 				var variableDeclarator = closestByType(node, 'VariableDeclarator');
 				var id = variableDeclarator.id;
