@@ -844,7 +844,7 @@ module.exports = {
 		*****************************/
 
 		// Verify filenames in `require()` statements have correct capitalization.
-		"lowercase-require": 2,
+		"lowercase-require-param": 2,
 
 		// Capitalize all variable names for modules imported by `require()` calls.
 		"capitalized-require-vars": 2,
