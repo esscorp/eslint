@@ -23,7 +23,7 @@ module.exports = {
 				if (isLowerCase(moduleName)) return;
 
 				context.report({
-					message: 'Lowercase `require()` paths',
+					message: '\'' + moduleName + '\' is not lowercase.',
 					node: node
 				});
 			}
