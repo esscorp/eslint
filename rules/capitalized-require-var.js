@@ -9,16 +9,33 @@ module.exports = {
 			recommended: true
 		},
 		fixable: false,
-		schema: []
+		schema: [
+			{
+				type: 'object',
+				required: [
+					// 'exceptions'
+				],
+				properties: {
+					exceptions: {
+						type: 'array',
+						items: {
+							type: 'string'
+						}
+					}
+				},
+			}
+		],
 	},
 	create: function(context) {
 		return {
 			'VariableDeclarator CallExpression[callee.name="require"][arguments.length=1]': function(node) {
 
+				var exceptions = getExceptions(context);
 				var variableDeclarator = closestByType(node, 'VariableDeclarator');
 				var id = variableDeclarator.id;
 				var varName = id.name;
 
+				if (contains(exceptions, varName)) return;
 				if (isCapitalized(varName)) return;
 
 				context.report({
@@ -30,6 +47,17 @@ module.exports = {
 	}
 };
 
+function getExceptions(context) {
+
+	var options = context.options;
+	var config = options[0];
+
+	if (!config) return [];
+	if (!config.exceptions) return [];
+
+	return config.exceptions;
+}
+
 function closestByType(node, type) {
 
 	var parent = node.parent;
@@ -40,6 +68,10 @@ function closestByType(node, type) {
 
 	// recursive case
 	return closestByType(parent, type);
+}
+
+function contains(arr, str) {
+	return (arr.indexOf(str) !== -1);
 }
 
 function isCapitalized(str) {
