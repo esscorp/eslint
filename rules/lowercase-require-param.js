@@ -14,7 +14,7 @@ module.exports = {
 	},
 	create: function(context) {
 		return {
-			'CallExpression[callee.name="require"][arguments.length=1] > :first-child': function(node) {
+			'CallExpression[callee.name="require"][arguments.length=1] > Literal:first-child': function(node) {
 
 				var modulePath = node.value;
 
