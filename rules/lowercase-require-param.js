@@ -14,16 +14,14 @@ module.exports = {
 	},
 	create: function(context) {
 		return {
-			'CallExpression[callee.name="require"][arguments.length=1]': function(node) {
+			'CallExpression[callee.name="require"][arguments.length=1] > :first-child': function(node) {
 
-				var args = node.arguments;
-				var arg = args[0];
-				var moduleName = args[0].value;
+				var modulePath = node.value;
 
-				if (isLowerCase(moduleName)) return;
+				if (isLowerCase(modulePath)) return;
 
 				context.report({
-					message: '\'' + moduleName + '\' is not lowercase.',
+					message: '\'' + modulePath + '\' is not lowercase.',
 					node: node
 				});
 			}
