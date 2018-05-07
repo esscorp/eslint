@@ -8,7 +8,7 @@ module.exports = {
 			category: 'Node.js and CommonJS',
 			recommended: true
 		},
-		fixable: false,
+		fixable: 'code',
 		schema: [
 			{
 				type: 'object',
@@ -40,7 +40,12 @@ module.exports = {
 
 				context.report({
 					message: '\'' + varName + '\' is not capitalized.',
-					node: node
+					node: node,
+					fix: function(fixer) {
+						var fixed = toCapitalCase(varName);
+						fixed = '\'' + fixed + '\'';
+						return fixer.replaceText(variableDeclarator, fixed);
+					}
 				});
 			}
 		};
@@ -77,4 +82,10 @@ function contains(arr, str) {
 function isCapitalized(str) {
 	var firstLetter = str[0];
 	return (firstLetter.toUpperCase() === firstLetter);
+}
+
+function toCapitalCase(str) {
+	var firstLetter = str[0];
+	var rest = str.substring(1);
+	return firstLetter.toUpperCase() + rest;
 }
