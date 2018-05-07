@@ -849,7 +849,7 @@ module.exports = {
 		// Capitalize all variable names for modules imported by `require()` calls.
 		"capitalized-require-var": [2, {
 			"exceptions": [
-				"patterns" // tmp
+				"patterns" // todo: revisit
 			]
 		}],
 
