@@ -9,7 +9,7 @@ module.exports = {
 			category: 'Node.js and CommonJS',
 			recommended: true
 		},
-		fixable: false,
+		fixable: 'code',
 		schema: []
 	},
 	create: function(context) {
@@ -22,7 +22,12 @@ module.exports = {
 
 				context.report({
 					message: '\'' + modulePath + '\' is not lowercase.',
-					node: node
+					node: node,
+					fix: function(fixer) {
+						var fixed = modulePath.toLowerCase();
+						fixed = '\'' + fixed + '\'';
+						return fixer.replaceText(node, fixed);
+					}
 				});
 			}
 		};
