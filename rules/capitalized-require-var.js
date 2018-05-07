@@ -43,8 +43,7 @@ module.exports = {
 					node: node,
 					fix: function(fixer) {
 						var fixed = toCapitalCase(varName);
-						fixed = '\'' + fixed + '\'';
-						return fixer.replaceText(variableDeclarator, fixed);
+						return fixer.replaceText(id, fixed);
 					}
 				});
 			}
