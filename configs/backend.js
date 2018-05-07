@@ -847,7 +847,13 @@ module.exports = {
 		"async-series": 1,
 
 		// Capitalize all variable names for modules imported by `require()` calls.
-		"capitalized-require-var": 2,
+		"capitalized-require-var": [2, {
+			"exceptions": [
+				"express", // tmp
+				"form", // tmp
+				"patterns" // tmp
+			]
+		}],
 
 		// Verify filenames in `require()` statements have correct capitalization.
 		"lowercase-require-param": 2,
