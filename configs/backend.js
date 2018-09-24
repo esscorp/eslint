@@ -217,7 +217,7 @@ module.exports = {
 
 		// Use these terms for lines which need more work and eslint will remind you to revisit them.
 		"no-warning-comments": [1, {
-			"terms": ["FIX", "REVISIT", "tmp", "dev"],
+			"terms": ["fix", "fixme", "revisit", "tmp", "dev"],
 			"location": "start"
 		}],
 
